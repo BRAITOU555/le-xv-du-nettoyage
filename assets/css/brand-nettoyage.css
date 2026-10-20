@@ -189,3 +189,7 @@ body.polished-home .sector-group .dg-who article::before{background:#171a17!impo
 body.polished-home .sector-group .dg-who article:nth-child(even)::before{background:#fff!important;color:#171a17!important}
 body.polished-home .sector-group .dg-who article:hover{background:#d5ef4b}
 body.polished-home .sector-group .dg-who article:nth-child(even):hover{background:#fff}
+
+/* Accessibilité : titre en surbrillance lisible (le vert citron seul sur blanc manquait de contraste) */
+body.polished-home .dg-hero h1 em,body.polished-home .dg-hero h1 em .w>span{color:#171a17!important;background:linear-gradient(transparent 60%,#d5ef4b 60%)}
+body.polished-home .dg-hero h1 em .w>span{background:none}
