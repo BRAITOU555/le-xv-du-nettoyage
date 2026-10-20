@@ -22,3 +22,6 @@ body.polished-home .footer .footer-bottom>span{margin-right:auto}
 .brand .brand-logo{display:block;width:72px!important;height:auto!important;max-width:100%;object-fit:contain;border-radius:0;flex-shrink:0}
 .footer .brand .brand-logo,.footer-brand .brand-logo{width:110px!important;height:auto!important}
 @media(max-width:760px){.brand .brand-logo{width:60px!important}.footer .brand .brand-logo,.footer-brand .brand-logo{width:90px!important}}
+
+/* Slogan du pied de page */
+.footer .footer-slogan{margin:12px 0 0;color:#c9cec3;font-size:15px;font-weight:600;letter-spacing:.01em}
