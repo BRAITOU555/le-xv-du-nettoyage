@@ -140,3 +140,12 @@ body.polished-home .dg-stat:hover::after{transform:scaleX(1)}
 body.polished-home .dg-stat strong{grid-area:t;text-align:left!important;font-size:17px!important;line-height:1.2!important;letter-spacing:-.02em;margin:0}
 body.polished-home .dg-stat>span{grid-area:d;text-align:left!important;font-size:12.5px!important;line-height:1.4!important;margin-top:4px!important;font-weight:500!important;color:#4a4f47!important}
 @media(max-width:760px){body.polished-home .dg-stats .dg-wrap{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}body.polished-home .dg-stat{padding:10px 11px 12px!important}body.polished-home .dg-stat strong{font-size:14.5px!important}body.polished-home .dg-stat>span{font-size:11.5px!important}}
+
+/* Fil d'Ariane discret + suppression des boutons flottants « Devis gratuit / Contact 7j/7 » */
+.breadcrumbs,body.polished-home .breadcrumbs{padding:0!important;margin:0!important;min-height:0!important;font-size:11.5px!important;line-height:1.3!important;opacity:.6}
+.breadcrumbs ol,.breadcrumbs ul{padding:6px 0!important;margin:0!important;gap:4px!important;font-size:11.5px!important}
+.breadcrumbs a{text-decoration:none!important}
+body.polished-home .dg-hero .breadcrumbs{padding:0 0 10px!important}
+body.polished-home .dg-hero .breadcrumbs ol{padding:0!important}
+.floating-cta{display:none!important}
+.dg-hero .dg-kicker{display:none!important}
