@@ -25,3 +25,21 @@ body.polished-home .footer .footer-bottom>span{margin-right:auto}
 
 /* Slogan du pied de page */
 .footer .footer-slogan{margin:12px 0 0;color:#c9cec3;font-size:15px;font-weight:600;letter-spacing:.01em}
+
+/* Slogan à côté du logo (en-tête et pied de page) ; le nom reste lu par les lecteurs d'écran */
+.brand .brand-name{position:static!important;width:auto!important;height:auto!important;margin:0!important;padding:0!important;overflow:visible!important;clip:auto!important;white-space:normal!important;display:flex;flex-direction:column;justify-content:center;max-width:150px}
+.brand .brand-name strong{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.brand .brand-name small{display:block;font-size:13px;line-height:1.25;font-weight:700;letter-spacing:.01em}
+.footer .brand .brand-name small{font-size:14px}
+@media(max-width:760px){.brand .brand-name{max-width:118px}.brand .brand-name small{font-size:12px}}
+
+/* Slogan : lisible, espacé du logo, visible aussi sur mobile */
+.brand{gap:10px!important}
+.brand .brand-name{display:flex!important;max-width:170px}
+.brand .brand-name small{text-transform:none!important;letter-spacing:0!important;font-size:15px!important;line-height:1.25!important;font-weight:700!important}
+.site-header .brand .brand-name small{color:#171a17!important}
+@media(max-width:760px){.brand .brand-name{max-width:125px}.brand .brand-name small{font-size:13px!important}}
+
+/* Slogan visible sur mobile et foncé dans la carte blanche du pied de page */
+body.polished-home .brand .brand-name small{display:block!important}
+.footer .brand .brand-name small,body.polished-home .footer .brand-name small{color:#171a17!important}
