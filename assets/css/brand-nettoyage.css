@@ -98,3 +98,16 @@ body.polished-home .home-proof .hp-txt{grid-area:txt;font-size:12.5px!important;
   body.polished-home .home-proof strong{font-size:14.5px!important}
   body.polished-home .home-proof .hp-txt{font-size:11.5px!important}
 }
+
+/* Mobile : images plus petites */
+@media(max-width:760px){
+  body.polished-home .editorial-photo,body.polished-home .editorial-photo img{aspect-ratio:16/9!important;max-height:170px!important;height:auto!important;width:100%!important;object-fit:cover!important}
+  body.polished-home .editorial-row{gap:12px!important}
+  body.polished-home .home-image-frame{max-width:88%!important;margin-left:auto!important;margin-right:auto!important}
+  body.polished-home .home-image-frame img{max-height:190px!important;width:100%!important;object-fit:cover!important}
+  body.polished-home .price-stamp{transform:scale(.72)!important;transform-origin:left top!important}
+}
+@media(max-width:760px){
+  body.polished-home .home-image-frame{position:relative!important;padding:8px!important;min-height:0!important;height:auto!important}
+  body.polished-home .price-stamp{position:absolute!important;right:14px!important;left:auto!important;bottom:14px!important;top:auto!important;margin:0!important;transform:scale(.6)!important;transform-origin:right bottom!important}
+}
