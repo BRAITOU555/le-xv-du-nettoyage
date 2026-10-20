@@ -57,6 +57,3 @@ body.polished-home .brand .brand-name small{display:block!important}
 @media(max-width:760px){.brand .brand-name{max-width:none!important}.site-header .brand .brand-name small{font-size:12px!important}}
 @media(max-width:380px){.site-header .brand .brand-name small{font-size:10.5px!important}}
 @media(max-width:340px){.site-header .brand .brand-name small{font-size:9px!important}}
-
-/* Lien « en savoir plus » sous les tarifs : centré */
-.tariff-more{text-align:center;margin:28px 0 0}
