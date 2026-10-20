@@ -111,3 +111,17 @@ body.polished-home .home-proof .hp-txt{grid-area:txt;font-size:12.5px!important;
   body.polished-home .home-image-frame{position:relative!important;padding:8px!important;min-height:0!important;height:auto!important}
   body.polished-home .price-stamp{position:absolute!important;right:14px!important;left:auto!important;bottom:14px!important;top:auto!important;margin:0!important;transform:scale(.6)!important;transform-origin:right bottom!important}
 }
+
+/* « Vos interlocuteurs » : cartes compactes, pastille numérotée, ombre dure */
+.dg-who{gap:14px!important;margin-top:30px!important}
+.dg-who article{padding:18px 18px 20px!important;border-radius:20px!important;box-shadow:4px 5px 0 var(--lime);display:grid;grid-template-columns:auto 1fr;grid-template-areas:"n t" "p p";column-gap:12px;align-items:center}
+.dg-who article:nth-child(2){background:var(--lime);box-shadow:4px 5px 0 #fff}
+.dg-who article::before{content:"0" attr(data-n)!important;position:static!important;grid-area:n;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--lime)!important;font-size:15px!important;font-weight:800;letter-spacing:.02em;transform:none}
+.dg-who article:nth-child(2)::before{color:#fff!important}
+.dg-who article.dg-in::before{animation:dgWhoPop .6s cubic-bezier(.3,1.6,.5,1) both}
+@keyframes dgWhoPop{from{transform:scale(.3) rotate(-20deg)}to{transform:none}}
+.dg-who article:hover{transform:translateY(-4px)!important;box-shadow:6px 8px 0 var(--ink)!important;background:var(--lime)}
+.dg-who article:hover::before{transform:none!important;color:var(--lime)!important}
+.dg-who h3{grid-area:t;font-size:1.1rem!important;margin:0!important;max-width:none!important}
+.dg-who p{grid-area:p;margin-top:10px!important;font-size:14px;line-height:1.55!important}
+@media(max-width:760px){.dg-who article{padding:14px 14px 16px!important}.dg-who h3{font-size:1rem!important}.dg-who p{font-size:13.5px}}
