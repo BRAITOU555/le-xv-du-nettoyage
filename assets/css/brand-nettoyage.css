@@ -149,3 +149,7 @@ body.polished-home .dg-hero .breadcrumbs{padding:0 0 10px!important}
 body.polished-home .dg-hero .breadcrumbs ol{padding:0!important}
 .floating-cta{display:none!important}
 .dg-hero .dg-kicker{display:none!important}
+
+/* Fil d'Ariane : petit et en gras */
+.breadcrumbs,.breadcrumbs ol,.breadcrumbs ul,.breadcrumbs a,.breadcrumbs li,body.polished-home .breadcrumbs,body.polished-home .dg-hero .breadcrumbs a{font-size:11px!important;font-weight:700!important;opacity:1}
+.breadcrumbs{opacity:.85!important}
