@@ -197,3 +197,20 @@ body.polished-home .dg-hero h1 em .w>span{background:none}
 .dg-hero-in .dg-lead+.dg-lead{margin-top:10px}
 .dg-hero .dg-sublead{margin-top:12px!important;color:#171a17!important;opacity:1!important}
 .dg-hero-in .dg-lead{margin-bottom:0!important}.dg-hero-in .dg-lead+.dg-lead{margin-top:12px!important}
+
+/* Mobile (pages Diogène/insalubre…) : titre, texte, boutons, photo, puis les 4 atouts sous la photo */
+@media(max-width:900px){
+  body.polished-home .dg-hero-in{display:flex!important;flex-direction:column!important;gap:0!important}
+  body.polished-home .dg-hero-in>div:first-child{display:contents!important}
+  body.polished-home .dg-hero-in h1{order:1}
+  body.polished-home .dg-hero-in .dg-sublead{order:2}
+  body.polished-home .dg-hero-in .dg-lead{order:3}
+  body.polished-home .dg-hero-in .dg-cta{order:4;width:100%}
+  body.polished-home .dg-hero-in .dg-hero-vis{order:5;margin-top:20px!important}
+  body.polished-home .dg-hero-in .dg-pts{order:6;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px!important;margin:18px 0 0!important;width:100%}
+  body.polished-home .dg-hero-in .dg-pts span{display:flex!important;align-items:center;justify-content:center;text-align:center;min-height:46px;padding:8px 10px!important;border:1.5px solid #171a17!important;border-radius:14px!important;background:#fff;box-shadow:3px 4px 0 #d5ef4b;font-size:12.5px!important;font-weight:700!important;line-height:1.25;color:#171a17!important}
+  body.polished-home .dg-hero-in .dg-pts span:nth-child(even){background:#d5ef4b;box-shadow:3px 4px 0 #fff}
+  body.polished-home .dg-hero-in .dg-pts span:last-child:nth-child(odd){grid-column:1/-1}
+}
+@media(max-width:900px){body.polished-home .dg-hero-in .dg-hero-vis{width:100%!important;align-self:stretch}body.polished-home .dg-hero-in>*{max-width:100%}}
+.dg-hero-in .dg-cta{margin-top:22px!important}
