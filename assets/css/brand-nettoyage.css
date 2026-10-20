@@ -43,3 +43,10 @@ body.polished-home .footer .footer-bottom>span{margin-right:auto}
 /* Slogan visible sur mobile et foncé dans la carte blanche du pied de page */
 body.polished-home .brand .brand-name small{display:block!important}
 .footer .brand .brand-name small,body.polished-home .footer .brand-name small{color:#171a17!important}
+
+/* Slogan en italique et entre guillemets, à côté du logo ; retiré sous le logo du pied de page */
+.brand .brand-name small{font-style:italic!important}
+.site-header .brand .brand-name small::before{content:"\00ab\00a0"}
+.site-header .brand .brand-name small::after{content:"\00a0\00bb"}
+.footer .brand .brand-name small,body.polished-home .footer .brand .brand-name small{display:none!important}
+@media(max-width:760px){.brand .brand-name{max-width:140px}}
