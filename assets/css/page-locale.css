@@ -79,3 +79,6 @@
 @media(max-width:900px){.pl-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
 @media(max-width:480px){.pl-cards{gap:9px!important}.pl-card,.pl-sec.dark .pl-card{padding:11px 11px 13px!important}.pl-card h3{font-size:14px!important}.pl-card p{font-size:12px!important;line-height:1.45!important}}
 @media(prefers-reduced-motion:reduce){.pl-js .pl-card{opacity:1;transform:none;animation:none!important}}
+
+.pl-arr{line-height:2.2;font-weight:700}
+.pl-arr .pl-link{white-space:nowrap}
