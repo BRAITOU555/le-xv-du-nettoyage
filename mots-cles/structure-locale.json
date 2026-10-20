@@ -1,0 +1,108 @@
+{
+  "schema_url": "/services/{prestation}/{departement}/{ville}/",
+  "prestations": [
+    "syndrome-diogene",
+    "logement-insalubre",
+    "apres-deces",
+    "scene-de-crime"
+  ],
+  "departements": [
+    {
+      "slug": "paris-75",
+      "nom": "Paris",
+      "code": "75"
+    },
+    {
+      "slug": "seine-et-marne-77",
+      "nom": "Seine-et-Marne",
+      "code": "77"
+    },
+    {
+      "slug": "yvelines-78",
+      "nom": "Yvelines",
+      "code": "78"
+    },
+    {
+      "slug": "essonne-91",
+      "nom": "Essonne",
+      "code": "91"
+    },
+    {
+      "slug": "hauts-de-seine-92",
+      "nom": "Hauts-de-Seine",
+      "code": "92"
+    },
+    {
+      "slug": "seine-saint-denis-93",
+      "nom": "Seine-Saint-Denis",
+      "code": "93"
+    },
+    {
+      "slug": "val-de-marne-94",
+      "nom": "Val-de-Marne",
+      "code": "94"
+    },
+    {
+      "slug": "val-doise-95",
+      "nom": "Val-d’Oise",
+      "code": "95"
+    },
+    {
+      "slug": "oise-60",
+      "nom": "Oise",
+      "code": "60"
+    }
+  ],
+  "pages_locales_actives": [
+    "/services/syndrome-diogene/paris-75/",
+    "/services/syndrome-diogene/paris-75/paris-1er/",
+    "/services/syndrome-diogene/paris-75/paris-2e/",
+    "/services/syndrome-diogene/paris-75/paris-3e/",
+    "/services/syndrome-diogene/paris-75/paris-4e/",
+    "/services/syndrome-diogene/paris-75/paris-5e/",
+    "/services/syndrome-diogene/paris-75/paris-6e/",
+    "/services/syndrome-diogene/paris-75/paris-7e/",
+    "/services/syndrome-diogene/paris-75/paris-8e/",
+    "/services/syndrome-diogene/paris-75/paris-9e/",
+    "/services/syndrome-diogene/paris-75/paris-10e/",
+    "/services/syndrome-diogene/paris-75/paris-11e/",
+    "/services/syndrome-diogene/paris-75/paris-12e/",
+    "/services/syndrome-diogene/paris-75/paris-13e/",
+    "/services/syndrome-diogene/paris-75/paris-14e/",
+    "/services/syndrome-diogene/paris-75/paris-15e/",
+    "/services/syndrome-diogene/paris-75/paris-16e/",
+    "/services/syndrome-diogene/paris-75/paris-17e/",
+    "/services/syndrome-diogene/paris-75/paris-18e/",
+    "/services/syndrome-diogene/paris-75/paris-19e/",
+    "/services/syndrome-diogene/paris-75/paris-20e/",
+    "/services/logement-insalubre/paris-75/",
+    "/services/logement-insalubre/paris-75/paris-1er/",
+    "/services/logement-insalubre/paris-75/paris-2e/",
+    "/services/logement-insalubre/paris-75/paris-3e/",
+    "/services/logement-insalubre/paris-75/paris-4e/",
+    "/services/logement-insalubre/paris-75/paris-5e/",
+    "/services/logement-insalubre/paris-75/paris-6e/",
+    "/services/logement-insalubre/paris-75/paris-7e/",
+    "/services/logement-insalubre/paris-75/paris-8e/",
+    "/services/logement-insalubre/paris-75/paris-9e/",
+    "/services/logement-insalubre/paris-75/paris-10e/",
+    "/services/logement-insalubre/paris-75/paris-11e/",
+    "/services/logement-insalubre/paris-75/paris-12e/",
+    "/services/logement-insalubre/paris-75/paris-13e/",
+    "/services/logement-insalubre/paris-75/paris-14e/",
+    "/services/logement-insalubre/paris-75/paris-15e/",
+    "/services/logement-insalubre/paris-75/paris-16e/",
+    "/services/logement-insalubre/paris-75/paris-17e/",
+    "/services/logement-insalubre/paris-75/paris-18e/",
+    "/services/logement-insalubre/paris-75/paris-19e/",
+    "/services/logement-insalubre/paris-75/paris-20e/"
+  ],
+  "regle": "Créer une vraie page index.html avec contenu local utile, fil d’Ariane et lien depuis le parent. Pas de pages vides ni de simple substitution de ville.",
+  "zone_intervention": {
+    "centre": "Paris",
+    "rayon_km": 200,
+    "departements_liste_non_exhaustive": true,
+    "regle": "La couverture suit le rayon autour de Paris, pas les frontières des départements. Ajouter progressivement les communes de cette zone, sans annoncer un département entier comme couvert par défaut."
+  },
+  "note": "Pages arrondissements Diogène générées par outils/generer_diogene_paris.py à partir de outils/donnees_paris.py ; données exportées dans donnees/diogene-paris-75.json."
+}

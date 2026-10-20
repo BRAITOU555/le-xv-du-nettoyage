@@ -1,0 +1,2940 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accueil — version premium | Nettoyage extrême : débarras, désinfection, remise en état | Devis gratuit | Le XV du Nettoyage</title>
+  <meta name="description" content="Entreprise de nettoyage extrême avec plusieurs agences à votre service : logements insalubres, nettoyage après décès, scènes de crime, syndrome de Diogène et débarras. Devis gratuit.">
+  <style>
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+:root {
+  --blue: #193765;
+  --red: #d91f32;
+  --ink: #232a31;
+  --muted: #626a70;
+  --pale: #f7f8fb;
+  --line: #e4e9f2;
+  --white: #ffffff;
+  --soft-red: #fff3f4;
+  --soft-blue: #eef4ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--muted);
+  background: var(--white);
+  font-size: 15px;
+  line-height: 1.65;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0 0 16px;
+  font-family: "Inter", Arial, sans-serif;
+  color: var(--red);
+  line-height: 1.15;
+}
+
+h1 {
+  color: var(--white);
+  font-size: clamp(30px, 4vw, 46px);
+  letter-spacing: 0;
+}
+
+h2 {
+  font-size: clamp(24px, 2.6vw, 32px);
+}
+
+h3 {
+  font-size: 19px;
+}
+
+p {
+  margin: 0 0 18px;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--white);
+  box-shadow: 0 8px 28px rgba(15, 31, 53, .08);
+}
+
+.nav-wrap {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: var(--ink);
+  min-width: 190px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  background: var(--red);
+  color: var(--white);
+  border-radius: 3px;
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.brand strong,
+.brand small {
+  display: block;
+  line-height: 1.1;
+}
+
+.brand strong {
+  font-size: 18px;
+}
+
+.brand small {
+  color: var(--muted);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.main-menu > a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 76px;
+  padding: 0 10px;
+  color: var(--ink);
+}
+
+.main-menu a:hover {
+  color: var(--red);
+}
+
+.phone-btn {
+  min-height: auto !important;
+  margin-left: 10px;
+  padding: 10px 15px !important;
+  border-radius: 10px;
+  background: #11a35d;
+  color: var(--white) !important;
+  font-size: 15px;
+}
+
+.menu-toggle {
+  display: none;
+  width: 46px;
+  height: 42px;
+  border: 0;
+  border-radius: 12px;
+  background: var(--blue);
+  color: var(--white);
+  font-size: 22px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background:
+    linear-gradient(105deg, rgba(18, 30, 44, .92) 0%, rgba(18, 30, 44, .78) 42%, rgba(42, 82, 132, .54) 100%),
+    none center / cover no-repeat;
+}
+
+.breadcrumb {
+  display: inline-flex;
+  margin: 0 0 14px;
+  color: rgba(255, 255, 255, .82);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.breadcrumb a {
+  color: inherit;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, .08), transparent 54%),
+    linear-gradient(90deg, rgba(255, 255, 255, .06), transparent 48%);
+  opacity: .75;
+  pointer-events: none;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 72px;
+  background: var(--white);
+  clip-path: polygon(0 46%, 8% 58%, 17% 50%, 28% 64%, 40% 51%, 52% 61%, 64% 46%, 77% 58%, 88% 44%, 100% 55%, 100% 100%, 0 100%);
+  pointer-events: none;
+}
+
+.home-page .hero {
+  background:
+    linear-gradient(180deg, #ffffff 0%, #f7f9fd 100%);
+}
+
+.home-page .hero::before {
+  background:
+    linear-gradient(90deg, rgba(255, 0, 42, .08), transparent 38%),
+    linear-gradient(180deg, rgba(0, 0, 0, .03), transparent 50%);
+  opacity: 1;
+}
+
+.home-page .hero::after {
+  height: 54px;
+  background: var(--white);
+  clip-path: polygon(0 28%, 12% 43%, 24% 32%, 38% 48%, 52% 34%, 66% 45%, 80% 30%, 100% 42%, 100% 100%, 0 100%);
+}
+
+.home-page .hero-inner {
+  min-height: 390px;
+  padding: 38px 0 62px;
+}
+
+.home-page .hero h1 {
+  color: var(--ink);
+  font-size: clamp(28px, 3.6vw, 42px);
+  font-weight: 800;
+}
+
+.refined-hero {
+  background:
+    linear-gradient(115deg, rgba(35, 42, 49, .93) 0%, rgba(35, 42, 49, .82) 46%, rgba(25, 55, 101, .58) 100%),
+    none center / cover no-repeat;
+}
+
+.refined-hero .hero-inner {
+  min-height: 380px;
+  padding-top: 34px;
+}
+
+.home-page .hero-copy p {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.home-page .hero-copy .offer {
+  background: #fff4f5;
+  color: var(--ink);
+  border: 1px solid rgba(255, 0, 42, .18);
+  box-shadow: none;
+}
+
+.home-page .hero-photo {
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 42px rgba(17, 35, 68, .12);
+}
+
+.home-page .key-card {
+  border: 1px solid var(--line);
+  box-shadow: 0 14px 34px rgba(17, 35, 68, .12);
+}
+
+.home-page .btn-light {
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.hero-inner {
+  position: relative;
+  z-index: 1;
+  width: min(1140px, calc(100% - 32px));
+  min-height: 420px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(280px, .72fr);
+  align-items: center;
+  gap: 48px;
+  padding: 42px 0 78px;
+}
+
+.hero-copy p {
+  max-width: 560px;
+  color: rgba(255, 255, 255, .92);
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+}
+
+.hero-copy .offer {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 18px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--blue);
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 700;
+  box-shadow: 0 14px 36px rgba(0, 0, 0, .18);
+}
+
+.hero-copy .offer strong {
+  color: var(--red);
+  margin-left: 6px;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 10px 18px;
+  border: 0;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn-secondary {
+  background: var(--red);
+  color: var(--white);
+}
+
+.btn-light {
+  background: var(--white);
+  color: var(--blue);
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 285px;
+  display: grid;
+  place-items: center;
+}
+
+.hero-photo {
+  width: min(360px, 100%);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border: 8px solid rgba(255, 255, 255, .9);
+  border-radius: 16px;
+  box-shadow: 0 20px 42px rgba(0, 0, 0, .24);
+}
+
+.vitrerie-page .refined-hero .hero-inner {
+  min-height: 280px;
+  padding-top: 22px;
+  padding-bottom: 38px;
+}
+
+.vitrerie-page .hero-visual {
+  min-height: 170px;
+}
+
+.vitrerie-page .hero-photo {
+  width: min(460px, 100%);
+  aspect-ratio: 16 / 9;
+  border-width: 6px;
+  max-height: 250px;
+}
+
+.vitrerie-page .context-panel img {
+  height: auto;
+  max-height: 260px;
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+}
+
+.door {
+  position: relative;
+  width: min(300px, 70vw);
+  height: 390px;
+  border: 12px solid rgba(255, 255, 255, .9);
+  border-radius: 6px;
+  background: linear-gradient(90deg, #242b34, #46515c 56%, #1b2028);
+  box-shadow: 0 32px 70px rgba(0, 0, 0, .33);
+}
+
+.door::before,
+.door::after {
+  content: "";
+  position: absolute;
+  left: 38px;
+  right: 38px;
+  height: 105px;
+  border: 2px solid rgba(255, 255, 255, .16);
+}
+
+.door::before {
+  top: 48px;
+}
+
+.door::after {
+  bottom: 52px;
+}
+
+.lock {
+  position: absolute;
+  right: 48px;
+  top: 185px;
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  background: #f2c451;
+  box-shadow: 0 0 0 7px rgba(242, 196, 81, .18);
+}
+
+.shine {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(110deg, transparent 30%, rgba(255, 255, 255, .16), transparent 50%);
+}
+
+.key-card {
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  min-width: 150px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--white);
+  box-shadow: 0 16px 40px rgba(5, 20, 49, .22);
+  color: var(--ink);
+}
+
+.key-card span {
+  display: block;
+  color: var(--red);
+  font-weight: 700;
+}
+
+.key-card strong {
+  display: block;
+  font-size: 24px;
+  color: var(--blue);
+}
+
+.key-card em {
+  display: block;
+  color: var(--muted);
+  font-style: normal;
+  font-weight: 700;
+}
+
+section {
+  padding: 62px 0;
+}
+
+.intro,
+.split,
+.services,
+.contact,
+.stats,
+.info-content,
+.service-list,
+.zones,
+.reviews,
+.faq,
+.long-copy,
+.detail-section {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.gray {
+  width: 100%;
+  max-width: none;
+  background: var(--pale);
+}
+
+.gray > .section-heading,
+.gray > .pricing-grid,
+.gray > .zone-cloud,
+.gray > .faq-list,
+.gray > .detail-list,
+.gray > .long-grid {
+  width: min(1140px, calc(100% - 32px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-heading {
+  max-width: 850px;
+  margin: 0 auto 34px;
+  text-align: center;
+}
+
+.section-heading.light h2,
+.section-heading.light p {
+  color: var(--white);
+}
+
+.feature-grid,
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.feature-card,
+.price-card {
+  min-height: 100%;
+  padding: 26px 22px;
+  border-radius: 14px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(17, 35, 68, .07);
+  text-align: center;
+}
+
+.card-media,
+.price-media,
+.service-grid img,
+.split-photo {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-media {
+  height: 170px;
+  margin: -26px -22px 20px;
+  width: calc(100% + 44px);
+  border-radius: 14px 14px 0 0;
+}
+
+.feature-card .icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: rgba(255, 0, 42, .1);
+  color: var(--red);
+  font-size: 22px;
+  font-weight: 800;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  padding: 34px 0 0;
+}
+
+.refined-stats {
+  margin-top: -22px;
+  position: relative;
+  z-index: 2;
+  padding-top: 0;
+}
+
+.editorial-ribbon {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  padding-top: 42px;
+}
+
+.editorial-ribbon article {
+  padding: 22px;
+  border-radius: 18px;
+  background: linear-gradient(180deg, var(--white), #fbfcff);
+  border: 1px solid var(--line);
+  box-shadow: 0 14px 34px rgba(17, 35, 68, .06);
+}
+
+.editorial-ribbon span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: var(--soft-red);
+  color: var(--red);
+  font-weight: 800;
+}
+
+.editorial-ribbon h3 {
+  color: var(--ink);
+  font-size: 18px;
+}
+
+.editorial-ribbon p {
+  margin-bottom: 0;
+}
+
+.stat-card {
+  min-height: 118px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+  padding: 20px;
+  border-radius: 14px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(17, 35, 68, .07);
+}
+
+.stat-card strong {
+  display: block;
+  color: var(--red);
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.stat-card span {
+  display: block;
+  margin-top: 10px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.stat-card.hot {
+  background: var(--red);
+}
+
+.stat-card.hot strong,
+.stat-card.hot span {
+  color: var(--white);
+}
+
+.band {
+  background:
+    linear-gradient(rgba(35, 42, 49, .86), rgba(35, 42, 49, .86)),
+    repeating-linear-gradient(135deg, rgba(255,255,255,.08) 0 2px, transparent 2px 18px);
+}
+
+.band .section-heading {
+  margin-bottom: 0;
+}
+
+.split-grid {
+  display: grid;
+  grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr);
+  gap: 34px;
+  align-items: center;
+}
+
+.split-photo {
+  height: 330px;
+  border-radius: 14px;
+  box-shadow: 0 20px 44px rgba(20, 31, 47, .18);
+}
+
+.photo-panel {
+  min-height: 360px;
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 30% 45%, rgba(242, 196, 81, .9) 0 7%, transparent 8%),
+    linear-gradient(125deg, rgba(0, 69, 226, .85), rgba(255, 0, 42, .7)),
+    repeating-linear-gradient(90deg, #29313a 0 26px, #20262d 26px 52px);
+  box-shadow: 0 20px 44px rgba(20, 31, 47, .18);
+  position: relative;
+  overflow: hidden;
+}
+
+.photo-panel::before {
+  content: "";
+  position: absolute;
+  width: 210px;
+  height: 58px;
+  top: 145px;
+  left: 90px;
+  border-radius: 29px;
+  border: 16px solid rgba(255, 255, 255, .9);
+  border-left-color: transparent;
+  transform: rotate(-24deg);
+}
+
+.photo-panel::after {
+  content: "";
+  position: absolute;
+  width: 160px;
+  height: 18px;
+  top: 205px;
+  left: 236px;
+  background: rgba(255, 255, 255, .9);
+  transform: rotate(-24deg);
+}
+
+.text-panel {
+  font-size: 16px;
+}
+
+.info-content {
+  padding-top: 54px;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, .9fr);
+  gap: 36px;
+  align-items: start;
+}
+
+.highlight-box {
+  padding: 32px;
+  border-radius: 22px;
+  background: var(--ink);
+  color: var(--white);
+  box-shadow: 0 20px 44px rgba(20, 31, 47, .18);
+}
+
+.highlight-box h3 {
+  color: var(--white);
+}
+
+.highlight-box ul,
+.service-grid ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.mini-link-grid {
+  display: grid;
+  gap: 8px;
+}
+
+.mini-link-grid a {
+  display: block;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, .16);
+  color: var(--white);
+  font-weight: 700;
+}
+
+.mini-link-grid a:hover {
+  color: #ffd6dc;
+}
+
+.long-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.long-grid article {
+  padding: 32px;
+  border-radius: 22px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(17, 35, 68, .07);
+}
+
+.long-grid.airy article {
+  border-radius: 10px;
+  box-shadow: none;
+  border-left: 4px solid var(--red);
+}
+
+.local-intro {
+  padding-top: 42px;
+}
+
+.local-layout {
+  padding: 66px 0;
+}
+
+.local-layout-inner {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(280px, .65fr);
+  gap: 26px;
+  align-items: stretch;
+}
+
+.context-panel {
+  display: grid;
+  grid-template-columns: minmax(260px, .9fr) minmax(0, 1.1fr);
+  gap: 26px;
+  align-items: center;
+  padding: 26px;
+  border-radius: 20px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 44px rgba(17, 35, 68, .07);
+}
+
+.context-panel img {
+  width: 100%;
+  height: 100%;
+  min-height: 310px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.context-panel h2 {
+  color: var(--ink);
+}
+
+.note-card {
+  padding: 28px;
+  border-radius: 20px;
+  background: var(--ink);
+  color: var(--white);
+  box-shadow: 0 18px 44px rgba(17, 35, 68, .12);
+}
+
+.note-card h3 {
+  color: var(--white);
+}
+
+.note-card ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.note-card li {
+  margin-bottom: 10px;
+}
+
+.scenario-section {
+  padding: 66px 0;
+}
+
+.scenario-grid {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.scenario-grid article {
+  padding: 24px;
+  border-radius: 10px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.scenario-grid h3 {
+  color: var(--ink);
+}
+
+.scenario-grid p {
+  margin-bottom: 0;
+}
+
+.refined-details {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.zone-family-grid {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.zone-family-grid.single {
+  grid-template-columns: minmax(280px, .72fr) minmax(0, 1.28fr);
+}
+
+.zone-family-card {
+  padding: 0;
+  border-radius: 12px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 10px 24px rgba(17, 35, 68, .045);
+  overflow: hidden;
+}
+
+.zone-family-card h3,
+.zone-family-card summary {
+  color: var(--ink);
+}
+
+.zone-family-card summary {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 56px;
+  padding: 15px 44px 15px 16px;
+  cursor: pointer;
+  font-weight: 800;
+  list-style: none;
+}
+
+.zone-family-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.zone-family-card summary::after {
+  content: "+";
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--soft-red);
+  color: var(--red);
+  font-size: 17px;
+  line-height: 1;
+  transform: translateY(-50%);
+}
+
+.zone-family-card[open] summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.zone-family-card[open] summary::after {
+  content: "–";
+  background: var(--red);
+  color: var(--white);
+}
+
+.zone-family-card div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px 10px;
+  padding: 14px 16px 16px;
+}
+
+.zone-family-card a {
+  display: flex;
+  align-items: center;
+  min-height: 30px;
+  padding: 6px 0;
+  border-bottom: 1px solid rgba(228, 233, 242, .8);
+  color: var(--ink);
+  font-size: 13px;
+  font-weight: 650;
+  line-height: 1.25;
+}
+
+.zone-family-card a:hover,
+.zone-family-card a.active {
+  color: var(--red);
+}
+
+.other-zone-card {
+  border-color: rgba(27, 54, 94, .18);
+  background: #fbfcff;
+}
+
+.other-zone-card summary {
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+@media (min-width: 981px) {
+  .other-zone-card {
+    grid-column: 1 / -1;
+  }
+
+  .other-zone-card div {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.other-zone-card .other-zone-groups {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+}
+
+.other-zone-city {
+  padding: 12px;
+  border: 1px solid rgba(228, 233, 242, .9);
+  border-radius: 10px;
+  background: var(--white);
+}
+
+.other-zone-city h3 {
+  margin: 0 0 8px;
+  color: var(--red);
+  font-size: 16px;
+}
+
+.other-zone-city div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 4px 10px;
+  padding: 0;
+}
+
+.home-hero {
+  padding: 0;
+  background:
+    linear-gradient(115deg, rgba(35, 42, 49, .94) 0%, rgba(35, 42, 49, .83) 46%, rgba(25, 55, 101, .58) 100%),
+    none center / cover no-repeat;
+  color: var(--white);
+}
+
+.home-hero-inner {
+  width: min(1140px, calc(100% - 32px));
+  min-height: 520px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(320px, .95fr);
+  gap: 46px;
+  align-items: center;
+  padding: 58px 0 72px;
+}
+
+.home-kicker {
+  display: inline-flex;
+  margin: 0 0 16px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .12);
+  color: var(--white);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.home-hero h1 {
+  max-width: 740px;
+  color: var(--white);
+  font-size: clamp(34px, 4.8vw, 58px);
+}
+
+.home-lead {
+  max-width: 620px;
+  color: rgba(255, 255, 255, .9);
+  font-size: 17px;
+}
+
+.home-actions,
+.hero-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.home-actions {
+  margin: 26px 0 20px;
+}
+
+.hero-points span {
+  padding: 8px 11px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, .1);
+  color: rgba(255, 255, 255, .92);
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.home-hero-panel {
+  position: relative;
+  padding: 14px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .14);
+  border: 1px solid rgba(255, 255, 255, .22);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, .22);
+}
+
+.home-hero-panel img,
+.home-image-frame img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.home-hero-panel img {
+  height: 390px;
+  border-radius: 16px;
+}
+
+.price-stamp {
+  position: absolute;
+  right: 28px;
+  bottom: 28px;
+  width: 158px;
+  padding: 16px;
+  border-radius: 16px;
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, .22);
+}
+
+.price-stamp span,
+.price-stamp em {
+  display: block;
+  font-style: normal;
+}
+
+.price-stamp span {
+  color: var(--red);
+  font-weight: 800;
+}
+
+.price-stamp strong {
+  display: block;
+  color: var(--blue);
+  font-size: 34px;
+  line-height: 1;
+}
+
+.home-proof {
+  width: min(1140px, calc(100% - 32px));
+  margin: -42px auto 0;
+  position: relative;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  padding: 0;
+}
+
+.home-proof article {
+  min-height: 118px;
+  padding: 20px;
+  border-radius: 16px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 44px rgba(17, 35, 68, .09);
+}
+
+.home-proof strong {
+  display: block;
+  color: var(--red);
+  font-size: 28px;
+  line-height: 1.1;
+}
+
+.home-proof span {
+  display: block;
+  margin-top: 10px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.home-intro,
+.home-services,
+.home-advice,
+.home-editorial {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.home-editorial.gray {
+  width: 100%;
+  max-width: none;
+  padding: 66px 0;
+}
+
+.home-editorial.gray > .section-heading,
+.home-editorial.gray > .editorial-grid {
+  width: min(1140px, calc(100% - 32px));
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.editorial-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.editorial-grid article {
+  padding: 30px;
+  border-radius: 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(17, 35, 68, .06);
+}
+
+.editorial-grid h3 {
+  color: var(--ink);
+}
+
+.editorial-grid p:last-child {
+  margin-bottom: 0;
+}
+
+.home-split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  align-items: stretch;
+}
+
+.home-split.reverse {
+  grid-template-columns: minmax(320px, .9fr) minmax(0, 1.1fr);
+  align-items: center;
+}
+
+.home-copy-card {
+  padding: 30px;
+  border-radius: 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(17, 35, 68, .07);
+}
+
+.home-copy-card.soft {
+  background: linear-gradient(180deg, var(--soft-red), var(--white));
+}
+
+.home-copy-card h2,
+.home-copy-card h3 {
+  color: var(--ink);
+}
+
+.home-copy-card p:last-child {
+  margin-bottom: 0;
+}
+
+.home-process,
+.tariff-panel {
+  padding: 66px 0;
+}
+
+.process-line,
+.tariff-grid {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  gap: 18px;
+}
+
+.process-line {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.process-line article {
+  position: relative;
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.process-line span {
+  display: inline-grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  margin-bottom: 14px;
+  border-radius: 50%;
+  background: var(--red);
+  color: var(--white);
+  font-weight: 800;
+}
+
+.process-line h3,
+.tariff-grid h3 {
+  color: var(--ink);
+}
+
+.service-deep-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.service-deep-grid article {
+  overflow: hidden;
+  border-radius: 18px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(17, 35, 68, .07);
+}
+
+.service-deep-grid img {
+  display: block;
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.service-deep-grid h3,
+.service-deep-grid p,
+.service-deep-grid a {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.service-deep-grid h3 {
+  margin-top: 20px;
+  color: var(--ink);
+}
+
+.service-deep-grid a {
+  display: inline-flex;
+  margin-bottom: 22px;
+  color: var(--red);
+  font-weight: 800;
+}
+
+.tariff-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.tariff-grid article {
+  padding: 24px;
+  border-radius: 16px;
+  background: var(--white);
+  border: 1px solid var(--line);
+}
+
+.tariff-grid strong {
+  display: block;
+  margin: 6px 0 12px;
+  color: var(--red);
+  font-size: 21px;
+}
+
+.home-image-frame img {
+  height: 390px;
+  border-radius: 20px;
+  box-shadow: 0 20px 44px rgba(20, 31, 47, .14);
+}
+
+.mini-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.mini-list span {
+  padding: 8px 11px;
+  border-radius: 999px;
+  background: var(--pale);
+  color: var(--ink);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+.long-grid article h3 {
+  color: var(--ink);
+}
+
+.price-card {
+  padding: 0 0 30px;
+  overflow: hidden;
+}
+
+.price-media {
+  height: 170px;
+}
+
+.price-card .eyebrow {
+  margin: 0;
+  padding: 20px;
+  background: var(--ink);
+  color: var(--white);
+  font-weight: 700;
+}
+
+.price-card h3 {
+  padding: 22px 20px 8px;
+}
+
+.price-card ul {
+  margin: 0;
+  padding: 0 26px 18px;
+  list-style: none;
+  text-align: left;
+}
+
+.price-card li {
+  padding: 8px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.price-card li::before {
+  content: "✓";
+  margin-right: 10px;
+  color: var(--red);
+  font-weight: 800;
+}
+
+.price-card > a {
+  display: inline-flex;
+  padding: 10px 16px;
+  border-radius: 10px;
+  background: var(--blue);
+  color: var(--white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.price-card.featured {
+  transform: translateY(-6px);
+  border-color: rgba(255, 0, 42, .35);
+  box-shadow: 0 28px 52px rgba(255, 0, 42, .13);
+}
+
+.price-card.featured .eyebrow,
+.price-card.featured > a {
+  background: var(--red);
+}
+
+.service-grid,
+.review-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.service-grid article,
+.review-grid article {
+  padding: 24px;
+  border-radius: 14px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(17, 35, 68, .07);
+}
+
+.service-grid article {
+  overflow: hidden;
+  padding-top: 0;
+}
+
+.service-grid img {
+  height: 160px;
+  margin: 0 -24px 20px;
+  width: calc(100% + 48px);
+}
+
+.service-grid article h3 {
+  color: var(--ink);
+}
+
+.review-grid strong {
+  display: block;
+  margin-bottom: 12px;
+  color: #f4a51c;
+}
+
+.review-grid span {
+  color: var(--red);
+  font-weight: 700;
+}
+
+.zone-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.zone-cloud span,
+.zone-cloud a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  padding: 7px 13px;
+  border-radius: 999px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 700;
+  box-shadow: 0 10px 26px rgba(17, 35, 68, .05);
+}
+
+.zone-cloud a {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.zone-cloud a:hover {
+  background: var(--red);
+  color: var(--white);
+}
+
+.zone-cloud a.active {
+  background: var(--red);
+}
+
+.local-links,
+.nearby-links {
+  width: min(980px, 100%);
+  margin: 26px auto 0;
+  padding: 22px;
+  border-radius: 14px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 16px 40px rgba(17, 35, 68, .07);
+  text-align: center;
+}
+
+.local-links h3,
+.nearby-links h3 {
+  color: var(--ink);
+}
+
+.local-links div,
+.nearby-links p {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.local-links a,
+.nearby-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 13px;
+  border-radius: 999px;
+  background: var(--pale);
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.local-links a:hover,
+.nearby-links a:hover,
+.local-links a.active {
+  background: var(--red);
+  color: var(--white);
+}
+
+.faq-list {
+  display: grid;
+  gap: 14px;
+}
+
+.faq-list details,
+.detail-list details {
+  border-radius: 14px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  box-shadow: 0 12px 30px rgba(17, 35, 68, .06);
+  overflow: hidden;
+}
+
+.faq-list summary,
+.detail-list summary {
+  cursor: pointer;
+  padding: 16px 20px;
+  color: var(--ink);
+  font-weight: 800;
+}
+
+.faq-list p,
+.detail-list p {
+  padding: 0 20px 18px;
+}
+
+.detail-list {
+  display: grid;
+  gap: 14px;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+  gap: 34px;
+  align-items: start;
+}
+
+.big-phone a {
+  color: var(--red);
+  font-size: 26px;
+  font-weight: 800;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 13px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+  width: 100%;
+  min-height: 44px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 12px 14px;
+  font: inherit;
+  color: var(--ink);
+  background: var(--white);
+}
+
+.contact-form textarea,
+.contact-form .check,
+.contact-form button {
+  grid-column: 1 / -1;
+}
+
+.contact-form textarea {
+  min-height: 130px;
+  resize: vertical;
+}
+
+.check {
+  font-size: 13px;
+}
+
+.footer {
+  padding: 48px 0 0;
+  background: #f7f9fd;
+}
+
+.footer-grid {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr repeat(3, 1fr);
+  gap: 28px;
+}
+
+.footer h3 {
+  color: var(--ink);
+  font-size: 18px;
+}
+
+.footer a {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.footer a:hover {
+  color: var(--red);
+}
+
+.footer-bottom {
+  margin-top: 42px;
+  padding: 20px calc((100% - min(1140px, calc(100% - 32px))) / 2);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: var(--ink);
+  color: var(--white);
+}
+
+.footer-bottom a {
+  margin: 0;
+}
+
+.floating-cta {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  z-index: 60;
+  display: grid;
+  gap: 10px;
+}
+
+.floating-cta a {
+  min-width: 210px;
+  padding: 11px 14px;
+  border-radius: 12px;
+  background: var(--white);
+  color: var(--ink);
+  box-shadow: 0 16px 36px rgba(20, 31, 47, .2);
+  border-left: 4px solid var(--red);
+}
+
+.floating-cta strong,
+.floating-cta span {
+  display: block;
+  line-height: 1.25;
+}
+
+.floating-cta span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+@media (max-width: 980px) {
+  .nav-wrap {
+    min-height: 76px;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .main-menu {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    right: 0;
+    display: none;
+    align-items: stretch;
+    flex-direction: column;
+    background: var(--white);
+    border-top: 1px solid var(--line);
+    padding: 12px 16px 18px;
+  }
+
+  .main-menu.is-open {
+    display: flex;
+  }
+
+  .main-menu > a {
+    min-height: auto;
+    padding: 12px;
+  }
+
+  .hero-inner,
+  .split-grid,
+  .contact,
+  .local-layout-inner,
+  .context-panel,
+  .zone-family-grid.single,
+  .home-hero-inner,
+  .home-split,
+  .home-split.reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-inner {
+    min-height: auto;
+    gap: 24px;
+  }
+
+  .feature-grid,
+  .pricing-grid,
+  .stats,
+  .content-grid,
+  .long-grid,
+  .service-grid,
+  .review-grid,
+  .footer-grid,
+  .editorial-ribbon,
+  .scenario-grid,
+  .zone-family-grid,
+  .home-proof,
+  .process-line,
+  .service-deep-grid,
+  .tariff-grid,
+  .editorial-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .other-zone-card .other-zone-groups,
+  .other-zone-city div {
+    grid-template-columns: 1fr;
+  }
+
+  .context-panel img {
+    min-height: 230px;
+  }
+
+  .price-card.featured {
+    transform: none;
+  }
+
+  .home-proof {
+    margin-top: 18px;
+  }
+
+  .home-hero-panel img,
+  .home-image-frame img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 620px) {
+  h2 {
+    font-size: 22px;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .hero {
+    overflow: visible;
+    margin-bottom: 68px;
+  }
+
+  section {
+    padding: 44px 0;
+  }
+
+  .hero-inner {
+    display: block;
+    padding: 24px 0 24px;
+  }
+
+  .hero-visual {
+    min-height: 0;
+    margin: 22px auto -86px;
+    width: min(300px, 88vw);
+  }
+
+  .hero-photo {
+    width: 100%;
+    aspect-ratio: 1.18 / 1;
+    border-width: 8px;
+    border-radius: 14px;
+  }
+
+  .vitrerie-page .hero {
+    margin-bottom: 34px;
+  }
+
+  .vitrerie-page .hero-visual {
+    width: min(320px, 92vw);
+    margin-bottom: -44px;
+  }
+
+  .vitrerie-page .hero-photo {
+    aspect-ratio: 16 / 9;
+    border-width: 5px;
+    max-height: 190px;
+  }
+
+  .vitrerie-page .context-panel img {
+    aspect-ratio: 16 / 9;
+    min-height: 0;
+    max-height: none;
+  }
+
+  .hero::after {
+    height: 42px;
+    bottom: -41px;
+    clip-path: polygon(0 0, 14% 34%, 28% 12%, 42% 44%, 56% 16%, 70% 38%, 84% 10%, 100% 36%, 100% 100%, 0 100%);
+  }
+
+  .hero-copy p {
+    font-size: 14px;
+  }
+
+  .home-hero-inner {
+    min-height: auto;
+    padding: 32px 0 44px;
+    gap: 24px;
+  }
+
+  .home-hero h1 {
+    font-size: 30px;
+  }
+
+  .home-lead {
+    font-size: 15px;
+  }
+
+  .home-proof article {
+    min-height: auto;
+  }
+
+  .home-copy-card,
+  .process-line article,
+  .tariff-grid article,
+  .editorial-grid article {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .home-hero-panel {
+    border-radius: 16px;
+    padding: 10px;
+  }
+
+  .home-hero-panel img {
+    height: 260px;
+    border-radius: 12px;
+  }
+
+  .price-stamp {
+    right: 18px;
+    bottom: 18px;
+    width: 138px;
+    padding: 12px;
+  }
+
+  .price-stamp strong {
+    font-size: 28px;
+  }
+
+  .refined-hero .hero-inner {
+    padding-top: 22px;
+  }
+
+  .editorial-ribbon,
+  .local-intro {
+    padding-top: 28px;
+  }
+
+  .editorial-ribbon article,
+  .context-panel,
+  .note-card,
+  .scenario-grid article {
+    border-radius: 12px;
+    padding: 20px;
+  }
+
+  .zone-family-card {
+    border-radius: 12px;
+    padding: 0;
+  }
+
+  .zone-family-card div {
+    grid-template-columns: 1fr;
+  }
+
+  .local-layout,
+  .scenario-section {
+    padding: 46px 0;
+  }
+
+  .home-page .hero {
+    margin-bottom: 42px;
+  }
+
+  .home-page .hero-inner {
+    padding: 22px 0 18px;
+  }
+
+  .home-page .hero h1 {
+    font-size: 28px;
+  }
+
+  .home-page .hero-visual {
+    margin: 18px auto -58px;
+    width: min(270px, 86vw);
+  }
+
+  .home-page .hero::after {
+    height: 30px;
+    bottom: -29px;
+  }
+
+  .hero-copy .offer {
+    display: flex;
+    width: fit-content;
+    max-width: 100%;
+    font-size: 15px;
+    padding: 9px 13px;
+  }
+
+  .hero-actions {
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .hero-actions .btn {
+    min-height: 40px;
+    padding: 9px 13px;
+  }
+
+  .key-card {
+    right: -2px;
+    bottom: -18px;
+    min-width: 136px;
+    padding: 12px 14px;
+    border-radius: 12px;
+  }
+
+  .key-card strong {
+    font-size: 21px;
+  }
+
+  .door {
+    height: 300px;
+  }
+
+  .contact-form {
+    grid-template-columns: 1fr;
+  }
+
+  .floating-cta {
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .floating-cta a {
+    min-width: 0;
+    padding: 11px;
+  }
+
+  .floating-cta strong {
+    font-size: 13px;
+  }
+
+  .floating-cta span {
+    font-size: 12px;
+  }
+}
+
+.shop-hero,
+.product-hero,
+.shop-policy {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.shop-hero {
+  padding: 58px 0 40px;
+}
+
+.shop-hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(300px, .95fr);
+  gap: 34px;
+  align-items: center;
+}
+
+.shop-hero h1,
+.product-summary h1,
+.shop-policy h1 {
+  color: var(--ink);
+}
+
+.shop-hero p,
+.product-summary p {
+  font-size: 16px;
+}
+
+.shop-hero img,
+.product-media img {
+  width: 100%;
+  display: block;
+  border-radius: 14px;
+  border: 1px solid var(--line);
+  box-shadow: 0 18px 44px rgba(17, 35, 68, .12);
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.shop-reassurance,
+.shop-products,
+.shop-preview,
+.product-details,
+.shop-info-links {
+  padding: 56px 0;
+}
+
+.shop-reassurance {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.shop-reassurance article {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--white);
+}
+
+.shop-reassurance strong,
+.shop-reassurance span {
+  display: block;
+}
+
+.shop-reassurance strong {
+  color: var(--ink);
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.product-grid {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.product-grid.compact {
+  margin-top: 24px;
+}
+
+.product-card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 32px rgba(17, 35, 68, .08);
+}
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.product-card span,
+.product-card h3,
+.product-card p,
+.product-card strong,
+.product-card a {
+  margin-left: 18px;
+  margin-right: 18px;
+}
+
+.product-card span {
+  display: inline-flex;
+  margin-top: 18px;
+  padding: 5px 9px;
+  border-radius: 999px;
+  background: var(--soft-blue);
+  color: var(--blue);
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.product-card h3 {
+  color: var(--ink);
+  margin-top: 12px;
+}
+
+.product-card strong {
+  display: block;
+  color: var(--red);
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.product-card a {
+  display: inline-flex;
+  margin-bottom: 20px;
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.center-action {
+  width: min(1140px, calc(100% - 32px));
+  margin: 26px auto 0;
+  text-align: center;
+}
+
+.product-hero {
+  padding: 52px 0;
+  display: grid;
+  grid-template-columns: minmax(300px, .95fr) minmax(0, 1.05fr);
+  gap: 34px;
+  align-items: center;
+}
+
+.product-summary .breadcrumb {
+  color: var(--blue);
+}
+
+.product-lead {
+  font-size: 17px;
+  color: var(--ink);
+}
+
+.product-price {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  color: var(--red);
+  font-size: 34px;
+  font-weight: 800;
+  margin: 22px 0 8px;
+}
+
+.product-price span {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.stock {
+  display: inline-flex;
+  padding: 8px 12px;
+  border-radius: 999px;
+  font-weight: 800;
+}
+
+.in-stock {
+  background: #edf8f2;
+  color: #137344;
+}
+
+.shop-info-links {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.shop-info-links a {
+  padding: 18px;
+  border-radius: 12px;
+  border: 1px solid var(--line);
+  background: var(--white);
+  color: var(--ink);
+  font-weight: 800;
+  text-align: center;
+}
+
+.brand-catalog {
+  width: min(1140px, calc(100% - 32px));
+  margin: 0 auto 28px;
+  display: grid;
+  gap: 22px;
+}
+
+.brand-row {
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--white);
+  box-shadow: 0 12px 32px rgba(17, 35, 68, .06);
+}
+
+.brand-heading {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 12px 24px;
+  align-items: start;
+  margin-bottom: 18px;
+}
+
+.brand-heading span {
+  display: inline-flex;
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: var(--soft-red);
+  color: var(--red);
+  font-weight: 800;
+}
+
+.brand-heading h3 {
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+
+.brand-heading p {
+  grid-column: 2;
+  margin-bottom: 0;
+}
+
+.catalog-mini-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.mini-product-card {
+  display: grid;
+  grid-template-columns: 94px 1fr;
+  gap: 12px;
+  align-items: stretch;
+  padding: 10px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fbfcff;
+}
+
+.mini-product-card img {
+  width: 94px;
+  height: 100%;
+  min-height: 112px;
+  object-fit: cover;
+  border-radius: 9px;
+  border: 1px solid var(--line);
+}
+
+.mini-product-card span {
+  display: inline-flex;
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: var(--soft-blue);
+  color: var(--blue);
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.mini-product-card h4 {
+  margin: 8px 0 6px;
+  color: var(--ink);
+  font-size: 15px;
+  line-height: 1.2;
+}
+
+.mini-product-card p {
+  margin-bottom: 8px;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.mini-product-card strong {
+  display: block;
+  color: var(--red);
+  margin-bottom: 6px;
+}
+
+.mini-product-card a {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.shop-policy {
+  padding: 60px 0;
+  max-width: 860px;
+}
+
+.shop-policy h1 {
+  font-size: clamp(30px, 4vw, 44px);
+}
+
+.shop-policy h2 {
+  color: var(--red);
+  margin-top: 28px;
+}
+
+@media (max-width: 860px) {
+  .shop-hero-inner,
+  .product-hero,
+  .shop-reassurance,
+  .product-grid,
+  .shop-info-links,
+  .catalog-mini-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-heading {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-heading p {
+    grid-column: auto;
+  }
+
+  .brand-row {
+    padding: 14px;
+  }
+
+  .mini-product-card {
+    grid-template-columns: 82px 1fr;
+  }
+
+  .mini-product-card img {
+    width: 82px;
+    min-height: 108px;
+  }
+
+  .shop-hero {
+    padding-top: 34px;
+  }
+
+  .product-hero {
+    padding-top: 28px;
+  }
+
+  .product-price {
+    font-size: 28px;
+    flex-direction: column;
+    gap: 2px;
+  }
+}
+
+</style>
+  <style>
+/* Page d'accueil — habillage « Virage » : encre #171a17, citron vert #d5ef4b, boutons ronds, ombres décalées.
+   Chargé uniquement par index.html, après styles.css. Tout est limité à body.polished-home. */
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=DM+Sans:wght@400;500;600;700&display=swap');
+
+body.polished-home{
+  --ink:#171a17;
+  --lime:#d5ef4b;
+  --lime-deep:#c4dd3e;
+  --moss:#71920f;
+  --paper:#f5f7ee;
+  --line:#dfe4d3;
+  --muted:#626762;
+  --blue:#171a17;
+  --red:#171a17;
+  --pale:#f5f7ee;
+  --soft-red:#f5f7ee;
+  --soft-blue:#f5f7ee;
+  --display:'Bricolage Grotesque','DM Sans',system-ui,sans-serif;
+  --radius:22px;
+  font-family:'DM Sans',system-ui,sans-serif;
+  color:var(--ink);
+  background:#fff;
+  -webkit-font-smoothing:antialiased;
+}
+body.polished-home h1,
+body.polished-home h2,
+body.polished-home h3{font-family:var(--display);font-weight:800;letter-spacing:-.03em;line-height:1;color:var(--ink)}
+body.polished-home h2{font-size:clamp(2rem,4vw,3.2rem)}
+body.polished-home p{color:var(--muted)}
+body.polished-home :focus-visible{outline:3px solid var(--moss);outline-offset:4px;border-radius:6px}
+
+/* ---------- En-tête ---------- */
+body.polished-home .site-header{background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);box-shadow:none}
+body.polished-home .brand{color:var(--ink)}
+body.polished-home .brand-mark{background:var(--ink);color:var(--lime);border-radius:10px;font-family:var(--display);font-weight:800;transform:skewX(-8deg)}
+body.polished-home .brand strong{font-family:var(--display);font-weight:800;letter-spacing:-.03em;color:var(--ink)}
+body.polished-home .brand small{color:var(--muted)}
+body.polished-home .main-menu > a:not(.phone-btn){color:var(--ink);font-weight:500;background:linear-gradient(var(--moss),var(--moss)) 0 100%/0 2px no-repeat;transition:background-size .25s}
+body.polished-home .main-menu > a:not(.phone-btn):hover{background-size:100% 2px;color:var(--ink)}
+body.polished-home .phone-btn{background:var(--ink);color:#fff!important;border-radius:99px;font-weight:700;border:2px solid var(--ink);transition:transform .18s,box-shadow .18s}
+body.polished-home .phone-btn:hover{transform:translate(-2px,-2px);box-shadow:3px 4px 0 var(--lime);background:var(--ink)}
+body.polished-home .menu-toggle{border:2px solid var(--line);background:#fff;color:var(--ink);border-radius:12px}
+
+/* ---------- Boutons ---------- */
+body.polished-home .btn{min-height:54px;padding:14px 28px;font-size:15px;font-weight:700;border:2px solid var(--ink);border-radius:99px;transition:transform .18s,box-shadow .18s,background .18s}
+body.polished-home .btn:hover{transform:translate(-2px,-3px)}
+body.polished-home .btn:active{transform:none;box-shadow:none}
+body.polished-home .btn-primary{background:var(--ink);color:#fff}
+body.polished-home .btn-primary:hover{background:var(--ink);box-shadow:4px 5px 0 var(--lime)}
+body.polished-home .btn-light,
+body.polished-home .btn-secondary{background:transparent;color:var(--ink);border:2px solid var(--ink)}
+body.polished-home .btn-light:hover,
+body.polished-home .btn-secondary:hover{background:transparent;box-shadow:4px 5px 0 var(--ink)}
+
+/* ---------- Hero ---------- */
+body.polished-home .home-hero{position:relative;overflow:hidden;isolation:isolate;background:var(--lime);color:var(--ink)}
+body.polished-home .home-hero::before{content:'';position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:
+   url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 640' preserveAspectRatio='none'%3E%3Cpath d='M-40 560 C 260 560, 380 380, 640 380 S 1040 120, 1480 90' fill='none' stroke='%23171a17' stroke-opacity='.12' stroke-width='64' stroke-linecap='round'/%3E%3Cpath d='M-40 560 C 260 560, 380 380, 640 380 S 1040 120, 1480 90' fill='none' stroke='%23171a17' stroke-opacity='.35' stroke-width='3' stroke-dasharray='3 26' stroke-linecap='round'/%3E%3C/svg%3E") center/100% 100% no-repeat}
+body.polished-home .home-hero-inner{width:min(1240px,calc(100% - 10%));padding:52px 0 96px;gap:44px;min-height:0}
+body.polished-home .home-kicker{background:var(--ink);color:var(--lime);border-radius:99px;border:0;font-size:13px;font-weight:600;padding:7px 16px;letter-spacing:.2px}
+body.polished-home .home-hero h1{color:var(--ink);font-size:clamp(2.4rem,5vw,4.6rem);line-height:.98;letter-spacing:-.035em;margin-bottom:22px;animation:vg-rise .7s cubic-bezier(.2,.8,.2,1) both}
+body.polished-home .home-lead{color:#2a2f28;font-size:17px;line-height:1.7;max-width:540px;animation:vg-rise .7s .25s cubic-bezier(.2,.8,.2,1) both}
+body.polished-home .home-actions{animation:vg-rise .7s .4s cubic-bezier(.2,.8,.2,1) both}
+body.polished-home .hero-points span{background:#fff;color:var(--ink);border:2px solid var(--ink);border-radius:99px;font-weight:600;font-size:13px;box-shadow:2px 3px 0 var(--ink)}
+body.polished-home .home-hero-panel{padding:0;background:var(--ink);border:0;border-radius:32px;box-shadow:10px 12px 0 var(--ink);transform:rotate(1.5deg);transition:transform .4s cubic-bezier(.2,.8,.2,1);background:var(--lime-deep)}
+body.polished-home .home-hero-panel:hover{transform:rotate(0)}
+body.polished-home .home-hero-panel img{border-radius:30px;height:410px}
+body.polished-home .price-stamp{right:-14px;bottom:auto;top:-18px;width:132px;height:132px;padding:0;border-radius:50%;display:grid;place-content:center;text-align:center;background:var(--ink);color:#fff;border:2px solid var(--ink);box-shadow:4px 5px 0 #fff;transform:rotate(8deg)}
+body.polished-home .price-stamp span{color:#cfd5c8;font-size:12px;font-weight:600}
+body.polished-home .price-stamp strong{color:var(--lime);font-family:var(--display);font-size:38px;letter-spacing:-.04em}
+body.polished-home .price-stamp em{color:#cfd5c8;font-size:11px}
+
+/* ---------- Bandeau de preuves + défilant ---------- */
+body.polished-home .home-proof{width:min(1240px,calc(100% - 10%));margin:-56px auto 0;gap:14px}
+body.polished-home .home-proof article{background:#fff;border:2px solid var(--ink);border-radius:var(--radius);box-shadow:5px 6px 0 var(--ink);transition:transform .2s,box-shadow .2s}
+body.polished-home .home-proof article:hover{transform:translate(-2px,-3px);box-shadow:7px 9px 0 var(--ink)}
+body.polished-home .home-proof strong{font-family:var(--display);font-weight:800;font-size:30px;letter-spacing:-.03em;color:var(--ink)}
+body.polished-home .home-proof span{color:var(--muted)}
+.vg-ticker{background:var(--ink);color:var(--lime);overflow:hidden;white-space:nowrap;padding:12px 0;margin-top:64px}
+.vg-ticker-track{display:inline-flex;gap:28px;font:700 22px 'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-.02em;animation:vg-marquee 38s linear infinite;will-change:transform}
+.vg-ticker-track i{font-style:normal;color:#fff}
+
+/* ---------- Sections ---------- */
+body.polished-home .home-intro,
+body.polished-home .home-services,
+body.polished-home .home-advice,
+body.polished-home .home-editorial,
+body.polished-home .home-process,
+body.polished-home .tariff-panel,
+body.polished-home .shop-preview,
+body.polished-home .zones,
+body.polished-home .reviews,
+body.polished-home .faq,
+body.polished-home .contact{background:#fff}
+body.polished-home .gray,
+body.polished-home .home-editorial.gray{background:var(--paper)}
+body.polished-home .section-heading h2{color:var(--ink)}
+body.polished-home .section-heading p{color:var(--muted)}
+body.polished-home .home-copy-card{background:#fff;border:2px solid var(--line);border-radius:var(--radius);box-shadow:none;transition:border-color .2s,box-shadow .2s}
+body.polished-home .home-copy-card:hover{border-color:var(--ink);box-shadow:5px 6px 0 var(--lime)}
+body.polished-home .home-copy-card.soft{background:var(--paper)}
+body.polished-home .home-image-frame img{border-radius:32px;box-shadow:10px 12px 0 var(--ink)}
+
+/* Étapes */
+body.polished-home .process-line article{background:#fff;border:1px solid var(--line);border-radius:var(--radius);transition:transform .2s,box-shadow .2s}
+body.polished-home .process-line article:hover{transform:translateY(-4px);box-shadow:-5px 6px 0 var(--lime)}
+body.polished-home .process-line span{background:var(--lime);color:var(--ink);border-radius:50%;font-family:var(--display);font-weight:800}
+
+/* Services, produits, tarifs, avis */
+body.polished-home .service-deep-grid article,
+body.polished-home .product-card,
+body.polished-home .tariff-grid article,
+body.polished-home .review-grid article{background:#fff;border:2px solid var(--line);border-radius:var(--radius);box-shadow:none;transition:transform .2s,border-color .2s,box-shadow .2s;overflow:hidden}
+body.polished-home .service-deep-grid article:hover,
+body.polished-home .product-card:hover,
+body.polished-home .tariff-grid article:hover,
+body.polished-home .review-grid article:hover{transform:translate(-2px,-3px);border-color:var(--ink);box-shadow:5px 6px 0 var(--lime)}
+body.polished-home .service-deep-grid a,
+body.polished-home .product-card a{color:var(--ink);font-weight:700;text-decoration:underline;text-decoration-color:var(--lime);text-decoration-thickness:3px;text-underline-offset:4px}
+body.polished-home .product-card > span,
+body.polished-home .pill{display:inline-block;background:var(--lime);color:var(--ink);border-radius:99px;font-weight:600;font-size:13px;padding:4px 12px}
+body.polished-home .product-card strong,
+body.polished-home .tariff-grid strong{color:var(--ink);font-family:var(--display);font-weight:800;letter-spacing:-.02em}
+body.polished-home .review-grid strong{color:var(--moss)}
+
+/* Zones */
+body.polished-home .zone-family-card{background:#fff;border:2px solid var(--line);border-radius:var(--radius);box-shadow:none}
+body.polished-home .zone-family-card[open]{border-color:var(--ink);box-shadow:5px 6px 0 var(--lime)}
+body.polished-home .zone-family-card summary{color:var(--ink);font-family:var(--display);font-weight:800}
+body.polished-home .zone-family-card summary::after{background:var(--lime);color:var(--ink);border-radius:50%}
+body.polished-home .zone-family-card a{color:var(--ink);border-radius:99px}
+body.polished-home .zone-family-card a:hover,
+body.polished-home .zone-family-card a.active{background:var(--lime);color:var(--ink);border-color:var(--ink)}
+
+/* FAQ */
+body.polished-home .faq-list details{border:2px solid var(--line);border-radius:18px;background:#fff;box-shadow:none;transition:border-color .2s,box-shadow .2s}
+body.polished-home .faq-list details[open]{border-color:var(--ink);box-shadow:5px 6px 0 var(--lime)}
+body.polished-home .faq-list summary{color:var(--ink);font-weight:600}
+body.polished-home .faq-list p{color:var(--muted)}
+
+/* Contact : bloc citron vert */
+body.polished-home .contact{background:var(--lime);border-radius:0;position:relative}
+body.polished-home .contact h2,
+body.polished-home .contact p{color:var(--ink)}
+body.polished-home .big-phone a{color:var(--ink);font-family:var(--display);font-weight:800;letter-spacing:-.03em;font-size:clamp(2rem,4vw,3rem);text-decoration:underline;text-decoration-thickness:4px;text-underline-offset:6px}
+body.polished-home .contact-form{background:#fff;border:2px solid var(--ink);border-radius:var(--radius);padding:24px;box-shadow:8px 10px 0 var(--ink)}
+body.polished-home .contact-form input,
+body.polished-home .contact-form select,
+body.polished-home .contact-form textarea{border:2px solid var(--line);border-radius:14px;background:#fff;color:var(--ink)}
+body.polished-home .contact-form input:focus,
+body.polished-home .contact-form select:focus,
+body.polished-home .contact-form textarea:focus{border-color:var(--ink);outline:none}
+
+/* Pied de page */
+body.polished-home .footer{background:var(--ink);color:#fff}
+body.polished-home .footer h3{color:var(--lime)}
+body.polished-home .footer p,
+body.polished-home .footer a{color:#b8bfb1}
+body.polished-home .footer a:hover{color:var(--lime)}
+body.polished-home .footer .brand strong{color:#fff}
+body.polished-home .footer .brand small{color:#b8bfb1}
+body.polished-home .footer .brand-mark{background:var(--lime);color:var(--ink)}
+body.polished-home .footer-bottom{border-top:1px solid #353b33;color:#b8bfb1}
+
+/* Boutons flottants mobiles */
+body.polished-home .floating-cta a{background:var(--ink);color:#fff;border-radius:99px;border:2px solid var(--ink)}
+body.polished-home .floating-cta a:first-child{background:var(--lime);color:var(--ink)}
+body.polished-home .floating-cta strong,
+body.polished-home .floating-cta span{color:inherit}
+
+/* ---------- Animations ---------- */
+@keyframes vg-rise{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:none}}
+@keyframes vg-marquee{to{transform:translateX(-50%)}}
+
+/* ---------- Mobile ---------- */
+@media(max-width:980px){
+  body.polished-home .home-hero-inner{padding-bottom:84px}
+  body.polished-home .home-hero-panel{max-width:560px;transform:none}
+  body.polished-home .home-proof{margin-top:-48px}
+}
+@media(max-width:760px){
+  body.polished-home .home-hero-inner{padding:30px 0 72px}
+  body.polished-home .home-hero h1{font-size:clamp(2.2rem,10.5vw,3.2rem)}
+  body.polished-home .home-hero-panel{box-shadow:7px 8px 0 var(--ink)}
+  body.polished-home .home-hero-panel img{height:280px}
+  body.polished-home .price-stamp{width:104px;height:104px;right:-6px;top:-14px}
+  body.polished-home .price-stamp strong{font-size:28px}
+  body.polished-home .home-actions{flex-direction:column}
+  body.polished-home .home-actions .btn{width:100%}
+  body.polished-home .home-image-frame img{box-shadow:7px 8px 0 var(--ink)}
+  body.polished-home .contact-form{box-shadow:6px 7px 0 var(--ink)}
+  .vg-ticker-track{font-size:18px;gap:22px}
+}
+@media(prefers-reduced-motion:reduce){
+  body.polished-home *,body.polished-home *::before,body.polished-home *::after{animation:none!important;transition:none!important}
+  .vg-ticker-track{animation:none!important}
+}
+
+/* ---------- Mobile : image au-dessus des boutons, cartes sur 2 colonnes ---------- */
+@media(max-width:760px){
+  body.polished-home .home-hero-inner{display:flex;flex-direction:column;gap:18px;align-items:stretch}
+  body.polished-home .home-hero-copy{display:contents}
+  body.polished-home .home-kicker{order:1;align-self:flex-start}
+  body.polished-home .home-hero h1{order:2;margin-bottom:0}
+  body.polished-home .home-lead{order:3;margin:0}
+  body.polished-home .home-hero-panel{order:4;width:100%;max-width:none;margin:6px 0 4px}
+  body.polished-home .home-actions{order:5}
+  body.polished-home .hero-points{order:6}
+
+  body.polished-home .home-proof,
+  body.polished-home .process-line,
+  body.polished-home .service-deep-grid,
+  body.polished-home .tariff-grid,
+  body.polished-home .product-grid{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:12px}
+  body.polished-home .home-proof article{min-height:0;padding:14px;box-shadow:3px 4px 0 var(--ink)}
+  body.polished-home .home-proof strong{font-size:22px}
+  body.polished-home .home-proof span{font-size:12.5px;line-height:1.4}
+  body.polished-home .process-line article,
+  body.polished-home .tariff-grid article{padding:14px}
+  body.polished-home .process-line h3,
+  body.polished-home .tariff-grid h3,
+  body.polished-home .service-deep-grid h3,
+  body.polished-home .product-card h3{font-size:16px;line-height:1.15}
+  body.polished-home .process-line p,
+  body.polished-home .tariff-grid p,
+  body.polished-home .service-deep-grid p,
+  body.polished-home .product-card p{font-size:12.5px;line-height:1.45}
+  body.polished-home .tariff-grid strong,
+  body.polished-home .product-card strong{font-size:15px}
+  body.polished-home .service-deep-grid img,
+  body.polished-home .product-card img{height:110px;width:100%;object-fit:cover}
+  body.polished-home .service-deep-grid article{padding-bottom:12px}
+  body.polished-home .service-deep-grid h3,
+  body.polished-home .service-deep-grid p,
+  body.polished-home .service-deep-grid a{margin-left:12px;margin-right:12px}
+  body.polished-home .service-deep-grid a,
+  body.polished-home .product-card a{font-size:13px}
+}
+
+/* ---------- Bloc « Toutes nos pages » (en bas, avant le pied de page) ---------- */
+body.polished-home .all-pages{background:var(--paper);border-top:1px solid var(--line);padding:56px 5% 40px}
+body.polished-home .all-pages > *{max-width:1240px;margin-left:auto;margin-right:auto}
+body.polished-home .all-pages-head{margin-bottom:26px;text-align:left}
+body.polished-home .all-pages-head h2{font-size:clamp(1.6rem,3vw,2.2rem);margin:0 0 8px}
+body.polished-home .all-pages-head p{margin:0;font-size:15px}
+body.polished-home .all-pages section,
+body.polished-home .all-pages .zones,
+body.polished-home .all-pages .home-editorial{background:transparent!important;padding:22px 0 0!important;margin:0 auto;width:auto}
+body.polished-home .all-pages .section-heading{text-align:left;margin:0 0 14px;padding:0}
+body.polished-home .all-pages .section-heading h2{font-size:18px;letter-spacing:-.02em;margin:0 0 6px}
+body.polished-home .all-pages .section-heading p{font-size:14px;margin:0}
+body.polished-home .all-pages .zone-family-grid{grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px;align-items:start}
+body.polished-home .all-pages .zone-family-grid.single{grid-template-columns:1fr}
+body.polished-home .all-pages .zone-family-card{padding:0}
+body.polished-home .all-pages .zone-family-card summary{padding:14px 18px;font-size:15px}
+body.polished-home .all-pages .zone-family-card > div,
+body.polished-home .all-pages .zone-family-card.wide > div{display:flex;flex-wrap:wrap;gap:8px;padding:4px 18px 18px}
+body.polished-home .all-pages .zone-family-card a{font-size:13px;padding:6px 12px;border:1px solid var(--line);background:#fff;text-decoration:none}
+body.polished-home .all-pages .zone-family-card > h3{font-size:15px;margin:0;padding:16px 18px 4px}
+@media(max-width:760px){
+  body.polished-home .all-pages{padding:40px 5% 28px}
+  body.polished-home .all-pages .zone-family-grid{grid-template-columns:1fr}
+}
+
+/* ---------- Cartes : contenu centré, hauteurs égales, boutons alignés en bas ---------- */
+body.polished-home .process-line article,
+body.polished-home .tariff-grid article,
+body.polished-home .home-proof article,
+body.polished-home .service-deep-grid article,
+body.polished-home .product-card{display:flex;flex-direction:column;align-items:center;text-align:center}
+body.polished-home .process-line article > span{margin:0 auto 12px}
+body.polished-home .process-line h3,
+body.polished-home .tariff-grid h3,
+body.polished-home .service-deep-grid h3,
+body.polished-home .product-card h3{margin:0 0 8px;text-align:center}
+body.polished-home .process-line p,
+body.polished-home .tariff-grid p,
+body.polished-home .service-deep-grid p,
+body.polished-home .product-card p{margin:0 0 12px;text-align:center}
+body.polished-home .tariff-grid strong{display:inline-block;background:var(--lime);color:var(--ink);border-radius:99px;padding:5px 14px;margin:0 0 12px;font-size:15px;line-height:1.2}
+body.polished-home .service-deep-grid article{padding:0 0 18px}
+body.polished-home .service-deep-grid img,
+body.polished-home .product-card img{width:100%;object-fit:cover;object-position:center;margin:0 0 14px}
+body.polished-home .service-deep-grid h3,
+body.polished-home .service-deep-grid p,
+body.polished-home .service-deep-grid a{margin-left:16px;margin-right:16px}
+body.polished-home .service-deep-grid a,
+body.polished-home .product-card a{margin-top:auto;margin-bottom:0;text-align:center;justify-content:center}
+body.polished-home .service-deep-grid p{margin-bottom:12px}
+body.polished-home .product-card{padding:0 14px 18px}
+body.polished-home .product-card img{width:calc(100% + 28px);margin-left:-14px;margin-right:-14px;height:170px}
+body.polished-home .product-card > span{margin:0 0 10px}
+body.polished-home .product-card strong{display:block;margin:0 0 10px}
+body.polished-home .product-grid.compact{align-items:stretch}
+@media(max-width:760px){
+  body.polished-home .product-grid .product-card:last-child:nth-child(odd){grid-column:1/-1}
+  body.polished-home .product-card img{height:120px}
+  body.polished-home .product-grid .product-card:last-child:nth-child(odd) img{height:150px}
+  body.polished-home .service-deep-grid img{height:110px}
+  body.polished-home .home-proof article{align-items:center;justify-content:center}
+  body.polished-home .home-proof strong{margin-bottom:4px}
+  body.polished-home .tariff-grid strong{font-size:13.5px;padding:4px 12px}
+  body.polished-home .service-deep-grid h3,
+  body.polished-home .service-deep-grid p,
+  body.polished-home .service-deep-grid a{margin-left:12px;margin-right:12px}
+}
+body.polished-home .product-card img{max-width:none;align-self:stretch}
+body.polished-home .all-pages .zone-family-grid,
+body.polished-home .all-pages .section-heading,
+body.polished-home .all-pages > section > *{width:100%;max-width:none;margin-left:0;margin-right:0}
+@media(max-width:760px){
+  body.polished-home .all-pages .zone-family-grid:not(.single){grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+  body.polished-home .all-pages .zone-family-grid:not(.single) .zone-family-card summary{padding:12px 12px;font-size:13.5px;gap:8px}
+  body.polished-home .all-pages .zone-family-grid:not(.single) .zone-family-card summary::after{width:24px;height:24px;flex:none}
+  body.polished-home .all-pages .zone-family-card.other-zone-card{grid-column:1/-1}
+}
+
+/* =====================================================================
+   Ticket façon Virage + bandeau « prix avant intervention »
+   ===================================================================== */
+.vg-ticket{--cut:16px;position:relative;background:#171a17;color:#fff;border-radius:22px;padding:26px 28px 22px;transform:rotate(-3deg);box-shadow:10px 12px 0 #d5ef4b;max-width:400px;width:100%;justify-self:center;
+  -webkit-mask:radial-gradient(circle var(--cut) at 0 62%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle var(--cut) at 100% 62%,transparent 98%,#000) right/51% 100% no-repeat;
+  mask:radial-gradient(circle var(--cut) at 0 62%,transparent 98%,#000) left/51% 100% no-repeat,radial-gradient(circle var(--cut) at 100% 62%,transparent 98%,#000) right/51% 100% no-repeat}
+.vg-ticket-top{display:flex;justify-content:space-between;align-items:center;font-size:13px;color:#cfd5c8}
+.vg-ticket-top b{font:800 20px 'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-.03em;color:#fff}
+.vg-ticket-top span{border:1px dashed #6b7366;border-radius:99px;padding:2px 10px}
+.vg-ticket-main{padding:34px 0 24px;border-bottom:2px dashed #4a5148}
+.vg-ticket-main strong{display:block;font:800 clamp(2rem,3.6vw,2.8rem)/.98 'Bricolage Grotesque',system-ui,sans-serif;letter-spacing:-.04em;color:#d5ef4b}
+.vg-ticket-main span{display:block;margin-top:12px;font-size:14px;color:#cfd5c8}
+.vg-ticket-bar{height:38px;margin:20px 0 12px;background:repeating-linear-gradient(90deg,#fff 0 2px,transparent 2px 5px,#fff 5px 6px,transparent 6px 11px,#fff 11px 14px,transparent 14px 17px);opacity:.85;border-radius:3px}
+.vg-ticket-foot{font-size:11.5px;color:#aab1a3}
+.vg-ticket-band{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:7%;align-items:center;max-width:1140px;margin:0 auto;padding:72px 5%}
+.vg-ticket-copy h2{font-size:clamp(1.7rem,3.4vw,2.6rem);margin:0 0 14px}
+.vg-ticket-copy p{max-width:480px;margin:0 0 22px;font-size:16px}
+.vg-ticket-actions{display:flex;flex-wrap:wrap;gap:12px}
+@media(max-width:980px){
+  .vg-ticket-band{grid-template-columns:1fr;gap:44px;padding:52px 6%}
+  .vg-ticket{max-width:340px;box-shadow:7px 8px 0 #d5ef4b;justify-self:center}
+}
+@media(max-width:760px){
+  .vg-ticket-actions{flex-direction:column}
+  .vg-ticket-actions .btn{width:100%}
+}
+
+/* Accueil : ticket à gauche, 4 étapes à droite */
+body.polished-home .vg-process-body{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:7%;align-items:center;width:min(1140px,calc(100% - 10%));margin:0 auto}
+body.polished-home .vg-process-body .process-line{width:100%;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:980px){
+  body.polished-home .vg-process-body{grid-template-columns:1fr;gap:44px}
+}
+
+/* Plus de texte sur la photo : l'étiquette de prix passe sous l'image */
+body.polished-home .home-hero-panel{display:flex;flex-direction:column;align-items:flex-start}
+body.polished-home .home-hero-panel img{width:100%}
+body.polished-home .price-stamp{position:static;right:auto;top:auto;width:auto;height:auto;margin:18px 0 0 6px;padding:10px 20px;border-radius:99px;display:flex;flex-wrap:wrap;align-items:baseline;gap:2px 10px;text-align:left;transform:rotate(-3deg);max-width:100%}
+body.polished-home .price-stamp span,
+body.polished-home .price-stamp strong,
+body.polished-home .price-stamp em{display:inline;margin:0;padding:0}
+body.polished-home .price-stamp strong{font-size:24px}
+@media(max-width:760px){body.polished-home .price-stamp{width:auto;height:auto;right:auto;top:auto;margin:16px 0 0 4px}}
+
+</style>
+  <style>
+    .photo-ph{min-height:360px;border-radius:22px;border:2px dashed rgba(23,26,23,.35);display:flex;align-items:center;justify-content:center;text-align:center;padding:24px;font-weight:600;color:#171a17;background:rgba(255,255,255,.35)}
+  </style>
+  <link rel="stylesheet" href="assets/css/refinement.css">
+
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+<meta name="theme-color" content="#171a17">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "LocalBusiness", "@id": "https://www.exemple.fr/#entreprise", "name": "Le XV du Nettoyage", "description": "Nettoyage extrême et débarras : syndrome de Diogène, logement insalubre, après décès, scène de crime.", "telephone": "+33100000000", "priceRange": "Devis gratuit", "url": "https://www.exemple.fr/", "areaServed": [{"@type": "GeoCircle", "geoMidpoint": {"@type": "GeoCoordinates", "latitude": 48.8566, "longitude": 2.3522}, "geoRadius": "200000"}, {"@type": "AdministrativeArea", "name": "Paris (75)"}, {"@type": "AdministrativeArea", "name": "Seine-et-Marne (77)"}, {"@type": "AdministrativeArea", "name": "Yvelines (78)"}, {"@type": "AdministrativeArea", "name": "Essonne (91)"}, {"@type": "AdministrativeArea", "name": "Hauts-de-Seine (92)"}, {"@type": "AdministrativeArea", "name": "Seine-Saint-Denis (93)"}, {"@type": "AdministrativeArea", "name": "Val-de-Marne (94)"}, {"@type": "AdministrativeArea", "name": "Val-d’Oise (95)"}, {"@type": "AdministrativeArea", "name": "Oise (60)"}], "address": {"@type": "PostalAddress", "addressLocality": "Paris", "addressCountry": "FR"}}, {"@type": "WebPage", "@id": "https://www.exemple.fr/#page", "name": "Nettoyage extrême : débarras, désinfection et remise en état", "url": "https://www.exemple.fr/", "about": {"@id": "https://www.exemple.fr/#entreprise"}}]}</script>
+<link rel="stylesheet" href="assets/css/brand-nettoyage.css">
+<link rel="stylesheet" href="assets/css/accueil-premium.css">
+</head>
+<body class="premium-test home-page polished-home">
+  <header class="site-header">
+    <nav class="nav-wrap" aria-label="Navigation principale">
+      <a class="brand" href="index.html" aria-label="Accueil Le XV du Nettoyage"><img class="brand-logo" src="assets/images/le-xv-du-nettoyage-rugby.png" alt="Logo Le XV du Nettoyage" width="2059" height="764"><span class="brand-name"><strong>Le XV du Nettoyage</strong><small>Nettoyage extrême &amp; débarras</small></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-menu">☰</button>
+      <div class="main-menu" id="main-menu">
+        <a href="#urgence">Accueil</a>
+        <a href="services/syndrome-diogene/">Diogène</a><a href="services/logement-insalubre/">Insalubre</a><a href="services/apres-deces/">Après décès</a><a href="services/scene-de-crime/">Scène de crime</a>
+        <a href="methode/">Méthode</a>
+        <a href="zones/">Zones d’intervention</a>
+        <a class="phone-btn" href="tel:+33100000000">01 00 00 00 00</a>
+      </div>
+    </nav>
+  </header>
+
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <main id="contenu"><nav class="breadcrumbs" aria-label="Fil d’Ariane"><ol><li><span aria-current="page">Accueil</span></li></ol></nav>
+    <section class="premium-hero" id="urgence"><div class="premium-copy"><p class="premium-eyebrow">LE XV DU NETTOYAGE · NETTOYAGE EXTRÊME</p><h1>Retrouver un lieu sain.<br><em>Avancer sereinement.</em></h1><p class="premium-lead">Débarras, nettoyage approfondi et désinfection des logements. Une intervention organisée avec discrétion, du premier échange à la remise des lieux.</p><div class="premium-actions"><a href="#contact" class="premium-primary">Demander un devis <span>↗</span></a><a href="#situations" class="premium-secondary">Découvrir nos interventions ↓</a></div><div class="premium-assurances"><span>Devis gratuit et détaillé</span><span>Intervention discrète</span><span>Biens personnels préservés</span></div></div><figure class="premium-photo"><img src="assets/images/deblayage-appartement-insalubre.webp" alt="Équipe de nettoyage en tenue de protection intervenant dans un logement" width="1672" height="941" fetchpriority="high"><figcaption><span>UNE MÉTHODE, À CHAQUE ÉTAPE</span><strong>Évaluer. Préserver. Remettre en état.</strong></figcaption></figure></section>
+
+    <section class="home-proof">
+      <article><strong>Un devis clair</strong><span>Les opérations définies avant intervention</span></article>
+      <article><strong>Un échange simple</strong><span>Une première évaluation par téléphone ou photos</span></article>
+      <article><strong>Un suivi précis</strong><span>Contrôle des opérations convenues en fin de chantier</span></article>
+    </section>
+
+    <div class="vg-ticker" aria-hidden="true">
+      <div class="vg-ticker-track">
+        <span>Nettoyage syndrome de Diogène</span><i>✳</i><span>Nettoyage après décès</span><i>✳</i><span>Logement insalubre</span><i>✳</i><span>Débarras appartement</span><i>✳</i>
+        <span>Nettoyage syndrome de Diogène</span><i>✳</i><span>Nettoyage après décès</span><i>✳</i><span>Logement insalubre</span><i>✳</i><span>Débarras appartement</span><i>✳</i>
+      </div>
+    </div>
+
+    <section class="home-intro" id="situations-intro">
+      <div class="section-heading">
+        <h2>Nettoyage extrême : une intervention adaptée à chaque situation</h2>
+        <p>Logement insalubre, nettoyage après décès, scène de crime, accumulation liée au syndrome de Diogène ou débarras : chaque situation demande une évaluation et une méthode adaptées.</p>
+      </div>
+      <div class="home-split">
+        <div class="home-copy-card">
+          <h3>Débarras et évacuation des déchets</h3>
+          <p>Nous vidons le logement pièce par pièce : encombrants, sacs, denrées périmées, meubles, textiles. Les papiers, bijoux, photos et l'argent trouvés sur place sont mis de côté et remis à la famille ou au tuteur.</p>
+          <p>Les déchets partent en déchetterie, en recyclerie ou en filière spécialisée pour les déchets souillés. Vous recevez le bordereau d'élimination.</p>
+        </div>
+        <div class="home-copy-card soft">
+          <h3>Nettoyage, désinfection, désodorisation</h3>
+          <p>Après le débarras : décapage des sols et des murs, désinfection, traitement des moisissures et des nuisibles, puis désodorisation à l'ozone si l'odeur reste.</p>
+          <p>La facture est détaillée (main-d'œuvre, évacuation, produits) et sert pour un notaire, un syndic, un propriétaire ou une assurance.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-process gray" id="methode">
+      <div class="section-heading">
+        <h2>Déroulé d'une intervention de nettoyage</h2>
+      </div>
+      <div class="vg-process-body">
+        <div class="vg-ticket" aria-hidden="true">
+          <div class="vg-ticket-top"><b>Le XV du Nettoyage</b><span>7j/7</span></div>
+          <div class="vg-ticket-main"><strong>Devis gratuit<br>avant travaux</strong><span>Visite sur place ou photos</span></div>
+          <div class="vg-ticket-bar"></div>
+          <div class="vg-ticket-foot">Appelez le 01 00 00 00 00</div>
+        </div>
+        <div class="process-line">
+          <article><span>1</span><h3>Appel</h3><p>Ville, type de logement, étage, volume à évacuer, logement occupé ou non.</p></article>
+          <article><span>2</span><h3>Devis gratuit</h3><p>Visite sur place ou photos par SMS. Le prix et la durée sont écrits dans le devis.</p></article>
+          <article><span>3</span><h3>Chantier</h3><p>Tri, débarras, évacuation, nettoyage, désinfection, désodorisation.</p></article>
+          <article><span>4</span><h3>Contrôle</h3><p>Visite du logement avec vous, remise du bordereau des déchets et de la facture.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-services editorial-services" id="situations"><div class="section-heading"><h2>Nos prestations de nettoyage extrême</h2><p>Une méthode adaptée à l’état du logement et à votre situation.</p></div><div class="editorial-list"><article class="editorial-row"><h2>Nettoyage de logement insalubre</h2><figure class="editorial-photo"><img src="assets/images/nettoyage-logement.jpg" alt="Nettoyage extrême d’un appartement parisien : lavage du parquet à l’injecteur-extracteur après débarras" width="1536" height="1024" loading="lazy" decoding="async"></figure><div class="editorial-copy"><p>Un logement très sale demande une évaluation des surfaces, des déchets et des accès. Le débarras libère les pièces avant le nettoyage de la cuisine, des sanitaires et des sols.</p><p>Le devis distingue le nettoyage, la désinfection et les éventuels traitements complémentaires. Les causes d’humidité et les réparations restent à examiner séparément.</p><a class="editorial-link" href="services/logement-insalubre/">Nettoyage de maison et appartement insalubres →</a></div></article><article class="editorial-row"><h2>Débarras et nettoyage syndrome de Diogène</h2><figure class="editorial-photo"><img src="assets/images/tri-des-objets.jpg" alt="Tri des objets personnels et des souvenirs avant le débarras d’un logement encombré" width="1536" height="1024" loading="lazy" decoding="async"></figure><div class="editorial-copy"><p>Le tri s’organise avec l’occupant ou l’interlocuteur désigné. Papiers, souvenirs et objets à conserver sont identifiés avant l’évacuation des encombrants.</p><p>Après le désencombrement, les opérations de nettoyage et de désinfection sont adaptées à l’état des pièces et aux matériaux. Le périmètre est défini avant les travaux.</p><a class="editorial-link" href="services/syndrome-diogene/">Débarras et nettoyage Diogène →</a></div></article><article class="editorial-row"><h2>Nettoyage et désinfection après décès</h2><figure class="editorial-photo"><img src="assets/images/galerie/desinfection-surfaces.webp" alt="Désinfection d’un plan de travail de cuisine avec une lavette et des gants" width="1536" height="1024" loading="lazy" decoding="async"></figure><div class="editorial-copy"><p>Les besoins peuvent concerner une zone précise, des odeurs persistantes ou le logement dans son ensemble. Le nettoyage après décès se distingue du vide maison et du débarras de succession.</p><p>L’évaluation permet de préciser les surfaces à traiter, les biens à préserver et les matériaux éventuellement à retirer. Les documents utiles à votre dossier sont définis lors du devis.</p><a class="editorial-link" href="services/apres-deces/">Nettoyage après décès et remise en état →</a></div></article><article class="editorial-row"><h2>Nettoyage après scène de crime, suicide ou accident</h2><figure class="editorial-photo"><img src="assets/images/galerie/equipe-protection.webp" alt="Équipe en combinaison de protection évacuant des sacs de déchets d’un appartement encombré" width="1536" height="1024" loading="lazy" decoding="async"></figure><div class="editorial-copy"><p>Après une scène de crime, un suicide ou un accident, la visite et le nettoyage sont organisés lorsque les lieux sont disponibles pour une intervention. Les conditions d’accès et les consignes éventuelles sont confirmées avant le chantier.</p><p>Le devis précise les zones concernées, le nettoyage, la désinfection et les éléments à évacuer. Les réparations et le remplacement des revêtements sont distingués de la prestation.</p><a class="editorial-link" href="services/scene-de-crime/">Nettoyage de scène de crime →</a></div></article></div></section>
+
+    <section class="tariff-panel gray" id="tarifs">
+      <div class="section-heading">
+        <h2>Prix d’une intervention de nettoyage extrême</h2>
+        <p>Le prix dépend du volume à évacuer, de l'état du logement, de l'étage et de l'accès. Il est écrit dans le devis gratuit.</p>
+      </div>
+      <div class="tariff-grid">
+        <article><h3>Studio / T1</h3><strong>Sur devis</strong><p>Débarras, nettoyage et désinfection.</p></article>
+        <article><h3>T2 / T3</h3><strong>Sur devis</strong><p>Chantier d'un à plusieurs jours selon le volume.</p></article>
+        <article><h3>Maison / pavillon</h3><strong>sur devis</strong><p>Visite obligatoire. Cave, garage et jardin inclus si besoin.</p></article>
+        <article><h3>Désodorisation à l'ozone</h3><strong>Sur devis</strong><p>Odeurs restées dans les murs, les sols et les textiles.</p></article>
+      </div>
+    </section>
+
+    <section class="home-advice">
+      <div class="home-split reverse">
+        
+        <div class="home-copy-card">
+          <h2>Entreprise de nettoyage extrême : discrétion et facture claire</h2>
+          <p>Camion sans logo, tenue de protection neutre, intervention aux horaires de l'immeuble. Les échanges et les accès sont organisés pour limiter les désagréments dans l’immeuble.</p>
+          <p>Facture détaillée, bordereau d'élimination des déchets et compte rendu d'intervention pour votre assurance, votre notaire ou votre syndic.</p>
+          <div class="mini-list">
+            <span>Devis gratuit</span>
+            <span>Bordereau des déchets</span>
+            <span>Facture détaillée</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-guide accompaniment" aria-labelledby="guide-title"><div class="guide-intro"><h2 id="guide-title">Un accompagnement adapté à chaque logement</h2><p>Un appartement encombré, une maison très sale et un logement touché par un décès ne nécessitent pas la même intervention. Le diagnostic permet de distinguer ce qui doit être évacué, nettoyé ou traité, et ce qui relève de travaux supplémentaires.</p></div><div class="reading-sections"><article><h3>01 · Préserver avant de débarrasser</h3><p>Le tri se prépare avec l’occupant ou la personne qui organise l’intervention. Identifiez les documents administratifs, les clés, les souvenirs et les objets à conserver. Une pièce ou des contenants séparés permettent de les protéger pendant l’évacuation.</p><p>Le volume des meubles et des sacs, la présence d’un ascenseur et les possibilités de stationnement influencent l’organisation du débarras. Un appartement de petite surface peut demander beaucoup de manutention s’il est rempli sur toute sa hauteur.</p></article><article><h3>02 · Nettoyer et désinfecter</h3><p>L’état des sols, de la cuisine et des sanitaires doit être examiné après l’enlèvement des encombrants. Nettoyer retire les salissures ; désinfecter intervient ensuite sur les surfaces concernées, avec une méthode adaptée aux matériaux.</p><p>Des infiltrations, des revêtements dégradés ou une infestation peuvent exiger une intervention complémentaire. Le devis doit distinguer le nettoyage, les traitements spécifiques et les réparations qui restent à prévoir.</p></article><article><h3>03 · Un devis clair, poste par poste</h3><p>Demandez un chiffrage qui précise le tri, la manutention, le transport, les frais d’évacuation et le nettoyage. La surface seule ne suffit pas : le volume et l’état du logement expliquent une grande partie des écarts de prix.</p><p>Vérifiez aussi les pièces incluses, les annexes, les accès et la durée estimée. Un devis clair indique les éventuels travaux exclus, plutôt que de laisser croire qu’un nettoyage remplace une rénovation.</p></article><article><h3>04 · Préparer votre intervention</h3><p>Communiquez la commune, la surface approximative, l’étage, l’accès à l’ascenseur et les contraintes de l’immeuble. Des photos d’ensemble aident à évaluer le volume ; évitez d’y laisser apparaître des documents personnels.</p><p>Précisez si le logement est occupé et si des clés doivent être remises sur place. La disponibilité, le stationnement et les modalités d’accès sont à confirmer lors du devis.</p></article></div><nav class="guide-links" aria-label="Approfondir votre demande"><a href="services/syndrome-diogene/">Débarras et nettoyage Diogène</a><a href="services/logement-insalubre/">Nettoyage de logement insalubre</a><a href="services/apres-deces/">Nettoyage après décès</a><a href="services/scene-de-crime/">Nettoyage après scène de crime ou suicide</a><a href="tarifs/">Prix et contenu du devis</a></nav></section>
+    <section class="detail-narrative reveal-section"><header><span class="detail-kicker">COMPRENDRE &amp; PRÉPARER</span><h2>Une organisation claire, du premier échange au contrôle final</h2></header><div class="detail-flow"><article class="detail-step"><span class="detail-index">01</span><div><h3>Comprendre votre situation avant de proposer une intervention</h3><p>Le nettoyage extrême recouvre des besoins différents : logement encombré, surfaces très sales, odeurs persistantes ou remise en état après un événement difficile. Le premier échange sert à décrire les lieux et à choisir les opérations utiles.</p><p>Précisez les pièces concernées, les accès et les biens à préserver. Ces informations permettent de préparer une visite et un devis cohérent avec l’état du logement.</p></div></article><article class="detail-step"><span class="detail-index">02</span><div><h3>Distinguer débarras, nettoyage et désinfection</h3><p>Le débarras retire les objets et déchets qui gênent l’accès aux surfaces. Le nettoyage enlève les salissures. La désinfection, lorsqu’elle est nécessaire, intervient sur les surfaces concernées avec une méthode adaptée.</p><p>Le devis doit distinguer ces étapes. Il précise aussi les prestations complémentaires et les réparations éventuelles qui ne relèvent pas du nettoyage.</p></div></article><article class="detail-step"><span class="detail-index">03</span><div><h3>Prévoir la restitution du logement</h3><p>Les consignes de conservation des objets et les modalités de remise des clés sont définies avant le chantier. Un interlocuteur désigné facilite les échanges et la validation des décisions.</p><p>En fin d’intervention, reprenez le périmètre du devis : pièces traitées, opérations effectuées et points restant à prévoir. Cette vérification évite de confondre nettoyage et rénovation complète.</p></div></article></div><div class="detail-bottom"><p>Votre situation mérite un périmètre précis et des explications claires.</p><a href="index.html#contact">Préparer mon devis →</a></div></section><section class="contact" id="contact">
+      <div>
+        <h2>Devis gratuit pour un nettoyage extrême</h2>
+        <p>Appelez et donnez la ville, le type de logement, l'étage, le volume approximatif et si le logement est occupé. Des photos par SMS permettent de chiffrer plus vite.</p>
+        <p class="big-phone"><a href="tel:+33100000000">01 00 00 00 00</a></p>
+      </div>
+      <div>
+        <h3>Zones d'intervention</h3>
+        <p>Les départements et villes présentés sur le site sont des exemples de secteurs d’intervention. Indiquez votre commune pour organiser la visite et le devis.</p>
+      </div>
+    </section>
+  
+
+    <section class="visual-gallery" id="photos"><div class="section-heading"><h2>Le nettoyage extrême en images</h2><p>Débarras, tri, nettoyage et remise en ordre : découvrez les étapes et les situations en images.</p></div><h3>Avant / après : exemples illustrés</h3><div class="comparison-gallery"><figure class="gallery-comparison"><a href="assets/images/galerie/avant-apres-cave.webp" target="_blank" rel="noopener" aria-label="Agrandir : Cave : tri et évacuation"><img src="assets/images/galerie/avant-apres-cave.webp" width="1600" height="596" loading="lazy" decoding="async" alt="Cave : tri et évacuation : comparaison illustrative avant et après nettoyage"></a><div class="comparison-labels"><span>Avant</span><span>Après</span></div><figcaption>Cave : tri et évacuation</figcaption></figure><figure class="gallery-comparison"><a href="assets/images/galerie/avant-apres-chambre.webp" target="_blank" rel="noopener" aria-label="Agrandir : Chambre : tri et remise en ordre"><img src="assets/images/galerie/avant-apres-chambre.webp" width="1600" height="667" loading="lazy" decoding="async" alt="Chambre : tri et remise en ordre : comparaison illustrative avant et après nettoyage"></a><div class="comparison-labels"><span>Avant</span><span>Après</span></div><figcaption>Chambre : tri et remise en ordre</figcaption></figure><figure class="gallery-comparison"><a href="assets/images/galerie/avant-apres-couloir.webp" target="_blank" rel="noopener" aria-label="Agrandir : Couloir : dégagement des circulations"><img src="assets/images/galerie/avant-apres-couloir.webp" width="1600" height="800" loading="lazy" decoding="async" alt="Couloir : dégagement des circulations : comparaison illustrative avant et après nettoyage"></a><div class="comparison-labels"><span>Avant</span><span>Après</span></div><figcaption>Couloir : dégagement des circulations</figcaption></figure><figure class="gallery-comparison"><a href="assets/images/galerie/avant-apres-cuisine.webp" target="_blank" rel="noopener" aria-label="Agrandir : Cuisine : nettoyage approfondi"><img src="assets/images/galerie/avant-apres-cuisine.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Cuisine : nettoyage approfondi : comparaison illustrative avant et après nettoyage"></a><div class="comparison-labels"><span>Avant</span><span>Après</span></div><figcaption>Cuisine : nettoyage approfondi</figcaption></figure><figure class="gallery-comparison"><a href="assets/images/galerie/avant-apres-debarras.webp" target="_blank" rel="noopener" aria-label="Agrandir : Garage : évacuation des encombrants"><img src="assets/images/galerie/avant-apres-debarras.webp" width="1600" height="596" loading="lazy" decoding="async" alt="Garage : évacuation des encombrants : comparaison illustrative avant et après nettoyage"></a><div class="comparison-labels"><span>Avant</span><span>Après</span></div><figcaption>Garage : évacuation des encombrants</figcaption></figure><figure class="gallery-comparison"><a href="assets/images/galerie/avant-apres-salle-de-bain.webp" target="_blank" rel="noopener" aria-label="Agrandir : Salle de bain : nettoyage des surfaces"><img src="assets/images/galerie/avant-apres-salle-de-bain.webp" width="1536" height="1024" loading="lazy" decoding="async" alt="Salle de bain : nettoyage des surfaces : comparaison illustrative avant et après nettoyage"></a><div class="comparison-labels"><span>Avant</span><span>Après</span></div><figcaption>Salle de bain : nettoyage des surfaces</figcaption></figure><figure class="gallery-comparison"><a href="assets/images/galerie/avant-apres-salon.webp" target="_blank" rel="noopener" aria-label="Agrandir : Salon : désencombrement et nettoyage"><img src="assets/images/galerie/avant-apres-salon.webp" width="1600" height="686" loading="lazy" decoding="async" alt="Salon : désencombrement et nettoyage : comparaison illustrative avant et après nettoyage"></a><div class="comparison-labels"><span>Avant</span><span>Après</span></div><figcaption>Salon : désencombrement et nettoyage</figcaption></figure><figure class="gallery-comparison"><a href="assets/images/galerie/avant-apres-studio.webp" target="_blank" rel="noopener" aria-label="Agrandir : Studio : débarras et nettoyage"><img src="assets/images/galerie/avant-apres-studio.webp" width="1600" height="667" loading="lazy" decoding="async" alt="Studio : débarras et nettoyage : comparaison illustrative avant et après nettoyage"></a><div class="comparison-labels"><span>Avant</span><span>Après</span></div><figcaption>Studio : débarras et nettoyage</figcaption></figure></div></section>
+<section class="faq gray" id="faq">
+      <div class="section-heading"><h2>Questions fréquentes sur le nettoyage extrême</h2></div>
+      <div class="faq-list">
+        <details open><summary>Combien coûte une intervention de nettoyage extrême ?</summary><p>Le prix dépend du nombre de pièces, du volume à évacuer et de l'état du logement. Le devis est gratuit et le prix est écrit avant le début des travaux.</p></details>
+        <details><summary>Intervenez-vous si la personne vit encore dans le logement ?</summary><p>Oui, avec son accord ou celui de son tuteur. Rien n'est jeté sans validation.</p></details>
+        <details><summary>Combien de temps dure un chantier ?</summary><p>Quelques heures pour un studio peu encombré, plusieurs jours pour une maison. La durée est indiquée dans le devis.</p></details>
+        <details><summary>L'assurance prend-elle en charge le nettoyage ?</summary><p>Parfois, après un décès, un dégât des eaux ou un sinistre. Cela dépend du contrat. Nous fournissons une facture détaillée.</p></details>
+        <details><summary>Les voisins seront-ils au courant ?</summary><p>L’organisation vise une intervention discrète. Les passages dans les parties communes peuvent toutefois être visibles.</p></details>
+        <details><summary>Que devient ce que vous évacuez ?</summary><p>Tri en recyclage, déchetterie ou filière spécialisée pour les déchets souillés. Vous recevez le bordereau d'élimination.</p></details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div><a class="brand footer-brand" href="index.html"><img class="brand-logo" src="assets/images/le-xv-du-nettoyage-rugby.png" alt="Logo Le XV du Nettoyage" width="2059" height="764"><span class="brand-name"><strong>Le XV du Nettoyage</strong><small>Nettoyage extrême &amp; débarras</small></span></a></div>
+      <div><h3>Interventions</h3><a href="services/syndrome-diogene/">Syndrome de Diogène</a><a href="services/apres-deces/">Après décès</a><a href="services/logement-insalubre/">Logement insalubre</a><a href="tarifs/">Tarifs</a></div>
+      <div><h3>Zone d’intervention</h3><a href="zones/">Voir les zones d’intervention</a><a href="services/">Toutes nos prestations</a></div>
+      <div><h3>Contact</h3><p>Maquette provisoire</p><p><a href="tel:+33100000000">01 00 00 00 00</a></p></div>
+    </div>
+    <div class="footer-bottom"><span>© Le XV du Nettoyage - maquette</span><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>
+  </footer>
+
+  <div class="floating-cta" aria-label="Accès rapides"><a href="tel:+33100000000"><strong>Devis gratuit</strong><span>01 00 00 00 00</span></a><a href="#contact"><strong>Contact</strong><span>7j/7</span></a></div>
+
+  <script>
+    const button = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.main-menu');
+    button.addEventListener('click', () => {
+      const opened = menu.classList.toggle('is-open');
+      button.setAttribute('aria-expanded', opened ? 'true' : 'false');
+    });
+  </script>
+  <script>
+/* Menu mobile : se referme quand on clique un lien, en dehors du menu, ou sur Echap. */
+(function () {
+  var button = document.querySelector('.menu-toggle');
+  var menu = document.querySelector('.main-menu');
+  if (!button || !menu) return;
+  function close() {
+    menu.classList.remove('is-open');
+    button.setAttribute('aria-expanded', 'false');
+  }
+  menu.addEventListener('click', function (e) {
+    if (e.target.closest('a')) close();
+  });
+  document.addEventListener('click', function (e) {
+    if (menu.classList.contains('is-open') && !menu.contains(e.target) && !button.contains(e.target)) close();
+  });
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') close();
+  });
+  window.addEventListener('hashchange', close);
+})();
+
+</script>
+<script src="assets/js/scroll-reveal.js" defer></script>
+</body>
+</html>

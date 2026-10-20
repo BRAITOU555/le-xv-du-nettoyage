@@ -1,0 +1,10 @@
+.DS_Store
+._*
+_archives-anciennes-urls/
+_sauvegarde-page-diogene/
+outils/
+*.zip
+.env
+.env.*
+!.env.example
+work/

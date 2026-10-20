@@ -1,0 +1,19 @@
+/* Identité Le XV du Nettoyage */
+body.polished-home .brand{min-width:0;gap:0}
+body.polished-home .brand .brand-logo,body.polished-home .footer .brand .brand-logo{display:block;width:220px;height:auto;max-width:100%;object-fit:contain;border-radius:0;flex-shrink:0}
+body.polished-home .brand .brand-name{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+body.polished-home .footer .footer-brand{background:#fff;border-radius:12px;padding:10px 16px;max-width:100%}
+@media(max-width:760px){body.polished-home .brand .brand-logo{width:184px}body.polished-home .footer .brand .brand-logo{width:220px}}
+
+/* Pied de page : colonnes alignées et identité compacte */
+body.polished-home .footer{padding:48px 24px 110px}
+body.polished-home .footer .footer-grid{display:grid;grid-template-columns:1.05fr 1fr 1fr .9fr;gap:36px;align-items:start;max-width:1140px;margin:0 auto}
+body.polished-home .footer .footer-grid>div{min-width:0;margin:0;display:flex;flex-direction:column;align-items:flex-start;gap:10px}
+body.polished-home .footer .footer-grid h3{margin:0 0 8px;font-size:15px;line-height:1.4}
+body.polished-home .footer .footer-grid a:not(.brand),body.polished-home .footer .footer-grid p{display:block;margin:0;font-size:13px;line-height:1.6;text-align:left;overflow-wrap:normal}
+body.polished-home .footer .footer-brand{padding:9px 12px;border-radius:6px;width:174px;max-width:100%}
+body.polished-home .footer .brand .brand-logo{width:150px;height:auto;max-width:100%}
+body.polished-home .footer .footer-bottom{max-width:1140px;margin:32px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.18);display:flex;align-items:center;flex-wrap:wrap;gap:12px 24px;font-size:12px}
+body.polished-home .footer .footer-bottom>span{margin-right:auto}
+@media(max-width:800px){body.polished-home .footer .footer-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 24px}}
+@media(max-width:480px){body.polished-home .footer{padding:34px 22px 110px}body.polished-home .footer .footer-grid{gap:26px 18px}body.polished-home .footer .footer-grid>div:first-child{grid-column:1/-1}body.polished-home .footer .footer-grid>div:last-child{grid-column:1/-1;padding-top:18px;border-top:1px solid rgba(255,255,255,.15);width:100%}body.polished-home .footer .footer-grid h3{font-size:14px}body.polished-home .footer .footer-grid a:not(.brand),body.polished-home .footer .footer-grid p{font-size:12px}body.polished-home .footer .footer-brand{width:154px}body.polished-home .footer .brand .brand-logo{width:130px}body.polished-home .footer .footer-bottom>span{flex-basis:100%}}

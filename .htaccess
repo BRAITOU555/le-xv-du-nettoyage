@@ -1,0 +1,7 @@
+DirectoryIndex index.html
+RewriteEngine On
+RewriteRule ^nettoyage\-syndrome\-diogene\.html$ /services/syndrome-diogene/ [R=301,L]
+RewriteRule ^nettoyage\-logement\-insalubre\.html$ /services/logement-insalubre/ [R=301,L]
+RewriteRule ^nettoyage\-apres\-deces\.html$ /services/apres-deces/ [R=301,L]
+RewriteRule ^nettoyage\-scene\-de\-crime\.html$ /services/scene-de-crime/ [R=301,L]
+RewriteRule ^tarifs\-nettoyage\-diogene\.html$ /tarifs/ [R=301,L]
