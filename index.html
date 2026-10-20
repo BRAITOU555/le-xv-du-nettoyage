@@ -2804,7 +2804,7 @@ body.polished-home .price-stamp strong{font-size:24px}
 {"@type":"Question","name":"Que devient ce que vous évacuez ?","acceptedAnswer":{"@type":"Answer","text":"Les déchets sont triés : recyclage, déchetterie ou filière spécialisée pour les déchets souillés. Un bordereau d’élimination vous est remis."}}]}
 ]}
 </script>
-<link rel="stylesheet" href="assets/css/brand-nettoyage.css?v=20261020d">
+<link rel="stylesheet" href="assets/css/brand-nettoyage.css?v=20261020e">
 </head>
 <body class="home-page polished-home">
   <header class="site-header">
@@ -2845,10 +2845,11 @@ body.polished-home .price-stamp strong{font-size:24px}
       </div>
     </section>
 
-    <section class="home-proof">
-      <article><strong>Évaluation</strong><span>Visite ou photos pour définir les prestations</span></article>
-      <article><strong>Devis écrit</strong><span>Périmètre et chiffrage validés avant les travaux</span></article>
-      <article><strong>Suivi</strong><span>Contrôle en fin de chantier et facture détaillée</span></article>
+    <section class="home-proof" aria-label="Nos engagements">
+      <article><span class="hp-num" data-count="1">01</span><span class="hp-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></span><strong>Évaluation</strong><span class="hp-txt">Visite ou photos pour définir les prestations</span></article>
+      <article><span class="hp-num" data-count="2">02</span><span class="hp-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5M9 13h6M9 17h6"/></svg></span><strong>Devis écrit</strong><span class="hp-txt">Périmètre et chiffrage validés avant les travaux</span></article>
+      <article><span class="hp-num" data-count="3">03</span><span class="hp-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 4.5 4.5L19 7"/></svg></span><strong>Suivi</strong><span class="hp-txt">Contrôle en fin de chantier et facture détaillée</span></article>
+      <article><span class="hp-num" data-count="4">04</span><span class="hp-ico"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></span><strong>Disponible</strong><span class="hp-txt">Équipe joignable 7j/7 pour votre demande</span></article>
     </section>
 
     <div class="vg-ticker" aria-hidden="true">
@@ -3072,6 +3073,15 @@ body.polished-home .price-stamp strong{font-size:24px}
   window.addEventListener('hashchange', close);
 })();
 
+</script>
+<script>
+(function(){var els=document.querySelectorAll('.home-proof .hp-num');if(!els.length)return;
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function run(el){var n=+el.dataset.count,t0=null;if(rm){return}
+function f(t){if(!t0)t0=t;var k=Math.min((t-t0)/700,1),v=Math.max(1,Math.round(n*k));el.textContent=('0'+v).slice(-2);if(k<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+var box=document.querySelector('.home-proof');
+if(!('IntersectionObserver' in window)||rm){box.classList.add('is-in');return}
+new IntersectionObserver(function(e,o){if(e[0].isIntersecting){box.classList.add('is-in');els.forEach(run);o.disconnect()}},{threshold:.3}).observe(box)})();
 </script>
 <script src="assets/js/scroll-reveal.js" defer></script>
 </body>

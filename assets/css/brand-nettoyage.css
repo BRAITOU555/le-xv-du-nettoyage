@@ -60,3 +60,41 @@ body.polished-home .brand .brand-name small{display:block!important}
 
 /* Lien « en savoir plus » sous les tarifs : centré */
 .tariff-more{text-align:center;margin:28px 0 0}
+
+/* ===== Accueil : cartes d'engagement compactes + animations ===== */
+body.polished-home .home-proof{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;gap:12px!important;width:min(1100px,calc(100% - 10%))!important;margin:-40px auto 0!important}
+body.polished-home .home-proof article{position:relative;display:grid!important;grid-template-columns:auto 1fr;grid-template-areas:"num ico" "ttl ttl" "txt txt";align-items:center!important;justify-content:stretch!important;gap:2px 10px;min-height:0!important;padding:12px 14px 14px!important;text-align:left!important;overflow:hidden;border:1.5px solid var(--ink)!important;border-radius:16px!important;background:#fff!important;box-shadow:3px 4px 0 var(--lime)!important;opacity:0;transform:translateY(14px);transition:transform .25s,box-shadow .25s}
+body.polished-home .home-proof.is-in article{animation:hpIn .55s cubic-bezier(.2,.8,.2,1) forwards}
+body.polished-home .home-proof.is-in article:nth-child(2){animation-delay:.1s}
+body.polished-home .home-proof.is-in article:nth-child(3){animation-delay:.2s}
+body.polished-home .home-proof.is-in article:nth-child(4){animation-delay:.3s}
+@keyframes hpIn{to{opacity:1;transform:none}}
+body.polished-home .home-proof article::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:100%;background:var(--lime-deep,#b6d02a);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+body.polished-home .home-proof article:hover{transform:translateY(-3px)!important;box-shadow:4px 6px 0 var(--lime)!important}
+body.polished-home .home-proof article:hover::after{transform:scaleX(1)}
+body.polished-home .home-proof .hp-num{grid-area:num;font-family:var(--display);font-weight:800;font-size:26px;line-height:1;letter-spacing:-.04em;color:var(--ink);font-variant-numeric:tabular-nums}
+body.polished-home .home-proof .hp-ico{grid-area:ico;justify-self:end;display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--lime);color:var(--ink);animation:hpPulse 2.8s ease-in-out infinite}
+@keyframes hpPulse{0%,100%{box-shadow:0 0 0 0 rgba(213,239,75,.7)}50%{box-shadow:0 0 0 7px rgba(213,239,75,0)}}
+body.polished-home .home-proof strong{grid-area:ttl;margin:6px 0 0!important;font-size:16px!important;line-height:1.2}
+body.polished-home .home-proof .hp-txt{grid-area:txt;font-size:12.5px!important;line-height:1.4!important;color:var(--muted)}
+@media(prefers-reduced-motion:reduce){body.polished-home .home-proof article{opacity:1;transform:none;animation:none!important}body.polished-home .home-proof .hp-ico{animation:none}}
+@media(max-width:900px){body.polished-home .home-proof{grid-template-columns:repeat(2,minmax(0,1fr))!important;width:calc(100% - 32px)!important;gap:10px!important;margin-top:-28px!important}}
+
+/* ===== Accueil mobile : échelle réduite (moins « zoomé ») ===== */
+@media(max-width:760px){
+  body.polished-home h1{font-size:25px!important;line-height:1.18!important}
+  body.polished-home .home-lead{font-size:14.5px!important;line-height:1.5!important}
+  body.polished-home .btn{font-size:14px!important;padding-top:11px!important;padding-bottom:11px!important}
+  body.polished-home h2{font-size:23px!important;line-height:1.2!important}
+  body.polished-home h3{font-size:18px!important;line-height:1.25!important}
+  body.polished-home main p,body.polished-home main li{font-size:14px!important;line-height:1.55!important}
+  body.polished-home .faq-list summary{font-size:14px!important}
+  body.polished-home .hero-points span{font-size:12px!important;padding:6px 10px!important}
+  body.polished-home main section{padding-top:34px!important;padding-bottom:34px!important}
+  body.polished-home .home-proof{padding:0!important}
+  body.polished-home .home-proof article{padding:10px 11px 12px!important}
+  body.polished-home .home-proof .hp-num{font-size:22px}
+  body.polished-home .home-proof .hp-ico{width:28px;height:28px}
+  body.polished-home .home-proof strong{font-size:14.5px!important}
+  body.polished-home .home-proof .hp-txt{font-size:11.5px!important}
+}
