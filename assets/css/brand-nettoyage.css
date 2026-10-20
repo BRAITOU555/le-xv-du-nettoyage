@@ -125,3 +125,18 @@ body.polished-home .home-proof .hp-txt{grid-area:txt;font-size:12.5px!important;
 .dg-who h3{grid-area:t;font-size:1.1rem!important;margin:0!important;max-width:none!important}
 .dg-who p{grid-area:p;margin-top:10px!important;font-size:14px;line-height:1.55!important}
 @media(max-width:760px){.dg-who article{padding:14px 14px 16px!important}.dg-who h3{font-size:1rem!important}.dg-who p{font-size:13.5px}}
+
+/* Bandeau « Évaluation / Devis / Discrétion / Contrôle » : cartes compactes, numérotées, animées */
+body.polished-home .dg-stats{padding:34px 0 6px!important}
+body.polished-home .dg-stats .dg-wrap{counter-reset:dgs;gap:12px!important}
+body.polished-home .dg-stat{counter-increment:dgs;position:relative;display:grid;grid-template-columns:auto 1fr;grid-template-areas:"n n" "t t" "d d";align-items:center;padding:12px 14px 14px!important;border-width:1.5px!important;border-radius:16px!important;box-shadow:3px 4px 0 var(--lime)!important;text-align:left;overflow:hidden}
+body.polished-home .dg-stat:nth-child(even){background:var(--lime)!important;box-shadow:3px 4px 0 #fff!important}
+body.polished-home .dg-stat::before{content:counter(dgs,decimal-leading-zero);grid-area:n;justify-self:start;display:grid;place-items:center;min-width:38px;height:26px;padding:0 9px;margin-bottom:8px;border-radius:99px;background:var(--ink);color:var(--lime);font:800 14px/1 var(--display,'Bricolage Grotesque',sans-serif);letter-spacing:.02em}
+body.polished-home .dg-stat:nth-child(even)::before{background:#fff;color:var(--ink)}
+body.polished-home .dg-stat.dg-in::before{animation:dgStatPop .6s cubic-bezier(.3,1.6,.5,1) calc(var(--d,0s) + .2s) both}
+@keyframes dgStatPop{from{transform:scale(.3) rotate(-18deg)}to{transform:none}}
+body.polished-home .dg-stat::after{content:"";position:absolute;left:0;bottom:0;height:3px;width:100%;background:var(--ink);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+body.polished-home .dg-stat:hover::after{transform:scaleX(1)}
+body.polished-home .dg-stat strong{grid-area:t;text-align:left!important;font-size:17px!important;line-height:1.2!important;letter-spacing:-.02em;margin:0}
+body.polished-home .dg-stat>span{grid-area:d;text-align:left!important;font-size:12.5px!important;line-height:1.4!important;margin-top:4px!important;font-weight:500!important;color:#4a4f47!important}
+@media(max-width:760px){body.polished-home .dg-stats .dg-wrap{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:10px!important}body.polished-home .dg-stat{padding:10px 11px 12px!important}body.polished-home .dg-stat strong{font-size:14.5px!important}body.polished-home .dg-stat>span{font-size:11.5px!important}}
