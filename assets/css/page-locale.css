@@ -60,3 +60,22 @@
 .pl-card p,.pl-sec.dark .pl-card p{color:#34382f}
 .pl-card:hover{transform:translate(-2px,-3px);box-shadow:6px 8px 0 #171a17}
 @media(max-width:760px){.pl-card,.pl-sec.dark .pl-card{padding:16px 16px 18px;border-radius:18px}.pl-card::before{font-size:26px}.pl-card p{font-size:14px}}
+
+/* Cartes compactes + animations */
+.pl-cards{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;margin-top:22px!important}
+.pl-card,.pl-sec.dark .pl-card{padding:14px 16px 16px!important;border-radius:16px!important;box-shadow:3px 4px 0 #d5ef4b}
+.pl-card:nth-child(even),.pl-sec.dark .pl-card:nth-child(even){box-shadow:3px 4px 0 #fff}
+.pl-card::before{font-size:22px!important;margin-bottom:4px!important}
+.pl-js .pl-card::before{display:none}
+.pl-n{display:inline-grid;place-items:center;min-width:38px;height:26px;padding:0 8px;margin-bottom:8px;border-radius:99px;background:#171a17;color:#d5ef4b;font:800 14px/1 var(--display,'Bricolage Grotesque',sans-serif);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.pl-card:nth-child(even) .pl-n{background:#fff;color:#171a17}
+.pl-card h3{font-size:16px!important;line-height:1.25!important;margin:0 0 5px!important}
+.pl-card p{font-size:13.5px!important;line-height:1.5!important}
+.pl-js .pl-card{opacity:0;transform:translateY(18px) scale(.97)}
+.pl-js .pl-card.pl-in{animation:plIn .55s cubic-bezier(.2,.8,.2,1) calc(var(--i,0)*.07s) forwards}
+@keyframes plIn{to{opacity:1;transform:none}}
+.pl-card.pl-in .pl-n{animation:plPop .6s cubic-bezier(.3,1.6,.5,1) calc(var(--i,0)*.07s + .15s) both}
+@keyframes plPop{from{transform:scale(.4) rotate(-12deg)}to{transform:none}}
+@media(max-width:900px){.pl-cards{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:480px){.pl-cards{gap:9px!important}.pl-card,.pl-sec.dark .pl-card{padding:11px 11px 13px!important}.pl-card h3{font-size:14px!important}.pl-card p{font-size:12px!important;line-height:1.45!important}}
+@media(prefers-reduced-motion:reduce){.pl-js .pl-card{opacity:1;transform:none;animation:none!important}}
