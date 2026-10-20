@@ -50,3 +50,13 @@
   .pl p,.pl-points li{font-size:16px}
   .pl-lead{font-size:18px!important}
 }
+
+/* Cartes alignées sur le style « logement insalubre » : blanc / citron, bordure noire, ombre dure, numéro */
+.pl-cards{counter-reset:plc}
+.pl-card,.pl-sec.dark .pl-card{counter-increment:plc;position:relative;background:#fff;border:2px solid #171a17;border-radius:22px;padding:22px 22px 24px;box-shadow:4px 5px 0 #d5ef4b;transition:transform .25s,box-shadow .25s}
+.pl-card:nth-child(even),.pl-sec.dark .pl-card:nth-child(even){background:#d5ef4b;box-shadow:4px 5px 0 #fff}
+.pl-card::before{content:counter(plc,decimal-leading-zero);display:block;font-family:var(--display,'Bricolage Grotesque',sans-serif);font-weight:800;font-size:34px;line-height:1;letter-spacing:-.05em;color:#171a17;opacity:.2;margin-bottom:8px}
+.pl-card h3,.pl-sec.dark .pl-card h3{color:#171a17;margin:0 0 8px}
+.pl-card p,.pl-sec.dark .pl-card p{color:#34382f}
+.pl-card:hover{transform:translate(-2px,-3px);box-shadow:6px 8px 0 #171a17}
+@media(max-width:760px){.pl-card,.pl-sec.dark .pl-card{padding:16px 16px 18px;border-radius:18px}.pl-card::before{font-size:26px}.pl-card p{font-size:14px}}
