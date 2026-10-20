@@ -161,3 +161,13 @@ body.polished-home .home-hero-inner{padding-top:14px!important}
 body.polished-home main>.breadcrumbs,body.polished-home main>nav.breadcrumbs{padding-left:20px!important;padding-right:20px!important}
 @media(min-width:761px){body.polished-home main>.breadcrumbs,body.polished-home main>nav.breadcrumbs{padding-left:5%!important}}
 @media(max-width:760px){body.polished-home .home-hero-inner{padding-top:16px!important}}
+
+/* Accueil mobile : titre, puis photo, puis description et boutons */
+@media(max-width:760px){
+  body.polished-home .home-hero-copy{display:contents!important}
+  body.polished-home .home-hero-inner{display:flex!important;flex-direction:column!important}
+  body.polished-home .home-hero-copy h1{order:1;margin:0!important}
+  body.polished-home .home-hero-panel{order:2}
+  body.polished-home .home-hero-copy .home-lead{order:3;margin:0!important}
+  body.polished-home .home-hero-copy .home-actions{order:4}
+}
