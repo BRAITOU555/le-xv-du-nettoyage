@@ -113,18 +113,18 @@ body.polished-home .home-proof .hp-txt{grid-area:txt;font-size:12.5px!important;
 }
 
 /* « Vos interlocuteurs » : cartes compactes, pastille numérotée, ombre dure */
-.dg-who{gap:14px!important;margin-top:30px!important}
-.dg-who article{padding:18px 18px 20px!important;border-radius:20px!important;box-shadow:4px 5px 0 var(--lime);display:grid;grid-template-columns:auto 1fr;grid-template-areas:"n t" "p p";column-gap:12px;align-items:center}
-.dg-who article:nth-child(2){background:var(--lime);box-shadow:4px 5px 0 #fff}
-.dg-who article::before{content:"0" attr(data-n)!important;position:static!important;grid-area:n;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--lime)!important;font-size:15px!important;font-weight:800;letter-spacing:.02em;transform:none}
-.dg-who article:nth-child(2)::before{color:#fff!important}
-.dg-who article.dg-in::before{animation:dgWhoPop .6s cubic-bezier(.3,1.6,.5,1) both}
+.dg-wrap>.dg-who{gap:14px!important;margin-top:30px!important}
+.dg-wrap>.dg-who article{padding:18px 18px 20px!important;border-radius:20px!important;box-shadow:4px 5px 0 var(--lime);display:grid;grid-template-columns:auto 1fr;grid-template-areas:"n t" "p p";column-gap:12px;align-items:center}
+.dg-wrap>.dg-who article:nth-child(2){background:var(--lime);box-shadow:4px 5px 0 #fff}
+.dg-wrap>.dg-who article::before{content:"0" attr(data-n)!important;position:static!important;grid-area:n;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ink);color:var(--lime)!important;font-size:15px!important;font-weight:800;letter-spacing:.02em;transform:none}
+.dg-wrap>.dg-who article:nth-child(2)::before{color:#fff!important}
+.dg-wrap>.dg-who article.dg-in::before{animation:dgWhoPop .6s cubic-bezier(.3,1.6,.5,1) both}
 @keyframes dgWhoPop{from{transform:scale(.3) rotate(-20deg)}to{transform:none}}
-.dg-who article:hover{transform:translateY(-4px)!important;box-shadow:6px 8px 0 var(--ink)!important;background:var(--lime)}
-.dg-who article:hover::before{transform:none!important;color:var(--lime)!important}
-.dg-who h3{grid-area:t;font-size:1.1rem!important;margin:0!important;max-width:none!important}
-.dg-who p{grid-area:p;margin-top:10px!important;font-size:14px;line-height:1.55!important}
-@media(max-width:760px){.dg-who article{padding:14px 14px 16px!important}.dg-who h3{font-size:1rem!important}.dg-who p{font-size:13.5px}}
+.dg-wrap>.dg-who article:hover{transform:translateY(-4px)!important;box-shadow:6px 8px 0 var(--ink)!important;background:var(--lime)}
+.dg-wrap>.dg-who article:hover::before{transform:none!important;color:var(--lime)!important}
+.dg-wrap>.dg-who h3{grid-area:t;font-size:1.1rem!important;margin:0!important;max-width:none!important}
+.dg-wrap>.dg-who p{grid-area:p;margin-top:10px!important;font-size:14px;line-height:1.55!important}
+@media(max-width:760px){.dg-wrap>.dg-who article{padding:14px 14px 16px!important}.dg-wrap>.dg-who h3{font-size:1rem!important}.dg-wrap>.dg-who p{font-size:13.5px}}
 
 /* Bandeau « Évaluation / Devis / Discrétion / Contrôle » : cartes compactes, numérotées, animées */
 body.polished-home .dg-stats{padding:34px 0 6px!important}
@@ -171,3 +171,21 @@ body.polished-home main>.breadcrumbs,body.polished-home main>nav.breadcrumbs{pad
   body.polished-home .home-hero-copy .home-lead{order:3;margin:0!important}
   body.polished-home .home-hero-copy .home-actions{order:4}
 }
+
+/* Page zones : cartes de départements compactes */
+.sector-group .dg-who{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:12px!important;margin-top:16px!important}
+.sector-group .dg-who article{position:relative;display:block!important;padding:14px 14px 16px!important;border:1.5px solid var(--ink)!important;border-radius:16px!important;background:#fff;box-shadow:3px 4px 0 var(--lime)!important;overflow:hidden}
+.sector-group .dg-who article:nth-child(even){background:var(--lime);box-shadow:3px 4px 0 #fff!important}
+.sector-group .dg-who article::before{content:attr(data-n)!important;position:static!important;display:inline-grid!important;place-items:center;min-width:38px;height:26px;padding:0 9px;margin:0 0 8px;border-radius:99px;background:var(--ink);color:var(--lime)!important;font:800 14px/1 var(--display,'Bricolage Grotesque',sans-serif)!important;letter-spacing:.02em}
+.sector-group .dg-who article:nth-child(even)::before{background:#fff;color:var(--ink)!important}
+.sector-group .dg-who article h3{padding-top:0!important;margin:0 0 4px!important;font-size:16px!important;line-height:1.2!important;max-width:none!important}
+.sector-group .dg-who article p{margin:0 0 6px!important;font-size:12.5px!important;line-height:1.4!important;overflow-wrap:normal;word-break:normal;hyphens:none}
+.sector-group .dg-who article a{display:block;margin-top:6px!important;font-size:12px!important;font-weight:700;color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.sector-group .dg-who article:hover{transform:translateY(-3px)!important;box-shadow:5px 7px 0 var(--ink)!important}
+.sector-group{margin-top:28px!important}
+@media(max-width:900px){.sector-group .dg-who{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:480px){.sector-group .dg-who{gap:9px!important}.sector-group .dg-who article{padding:11px 11px 13px!important}.sector-group .dg-who article h3{font-size:14.5px!important}.sector-group .dg-who article p,.sector-group .dg-who article a{font-size:11.5px!important}}
+body.polished-home .sector-group .dg-who article::before{background:#171a17!important;color:#d5ef4b!important;width:auto!important;transform:none!important}
+body.polished-home .sector-group .dg-who article:nth-child(even)::before{background:#fff!important;color:#171a17!important}
+body.polished-home .sector-group .dg-who article:hover{background:#d5ef4b}
+body.polished-home .sector-group .dg-who article:nth-child(even):hover{background:#fff}
