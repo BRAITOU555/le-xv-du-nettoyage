@@ -153,3 +153,11 @@ body.polished-home .dg-hero .breadcrumbs ol{padding:0!important}
 /* Fil d'Ariane : petit et en gras */
 .breadcrumbs,.breadcrumbs ol,.breadcrumbs ul,.breadcrumbs a,.breadcrumbs li,body.polished-home .breadcrumbs,body.polished-home .dg-hero .breadcrumbs a{font-size:11px!important;font-weight:700!important;opacity:1}
 .breadcrumbs{opacity:.85!important}
+
+/* Accueil : titre remonté */
+body.polished-home .home-hero{padding-top:8px!important}
+body.polished-home .home-hero-inner{padding-top:14px!important}
+@media(max-width:760px){body.polished-home .home-hero{padding-top:0!important}body.polished-home .home-hero-inner{padding-top:6px!important}}
+body.polished-home main>.breadcrumbs,body.polished-home main>nav.breadcrumbs{padding-left:20px!important;padding-right:20px!important}
+@media(min-width:761px){body.polished-home main>.breadcrumbs,body.polished-home main>nav.breadcrumbs{padding-left:5%!important}}
+@media(max-width:760px){body.polished-home .home-hero-inner{padding-top:16px!important}}
